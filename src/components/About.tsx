@@ -13,9 +13,9 @@ const About = () => {
           <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Main Description */}
-          <div className="space-y-6">
+        {/* Main Description */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="space-y-6 text-center">
             <p className="text-lg text-body leading-relaxed">
               I am <span className="font-semibold text-heading">Shubham Mehta</span>, 
               an Economics Honors graduate from Ramanujan College, Delhi University. 
@@ -37,45 +37,33 @@ const About = () => {
               real-world business challenges through innovative data-driven solutions.
             </p>
           </div>
+        </div>
 
-          {/* Achievement Cards */}
-          <div className="space-y-6">
-            <Card className="p-6 shadow-elegant hover:shadow-lg transition-smooth">
-              <div className="flex items-start space-x-4">
-                <div className="bg-primary-light p-3 rounded-lg">
-                  <GraduationCap className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-heading mb-2">Academic Excellence</h3>
-                  <p className="text-body">Economics Honors graduate with strong analytical foundation and research methodology expertise.</p>
-                </div>
-              </div>
-            </Card>
+        {/* Highlight Boxes */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <Card className="p-6 shadow-elegant hover:shadow-lg transition-smooth text-center">
+            <div className="bg-primary-light p-3 rounded-lg w-fit mx-auto mb-4">
+              <GraduationCap className="h-6 w-6 text-primary" />
+            </div>
+            <h3 className="font-semibold text-heading mb-2">Academic Excellence</h3>
+            <p className="text-body text-sm">Economics Honors graduate with strong analytical foundation</p>
+          </Card>
 
-            <Card className="p-6 shadow-elegant hover:shadow-lg transition-smooth">
-              <div className="flex items-start space-x-4">
-                <div className="bg-primary-light p-3 rounded-lg">
-                  <TrendingUp className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-heading mb-2">Revenue Growth</h3>
-                  <p className="text-body">Achieved 40% YoY RASK growth through strategic pricing analytics and data-driven insights.</p>
-                </div>
-              </div>
-            </Card>
+          <Card className="p-6 shadow-elegant hover:shadow-lg transition-smooth text-center">
+            <div className="bg-primary-light p-3 rounded-lg w-fit mx-auto mb-4">
+              <TrendingUp className="h-6 w-6 text-primary" />
+            </div>
+            <h3 className="font-semibold text-heading mb-2">Revenue Growth</h3>
+            <p className="text-body text-sm">40% YoY RASK growth through strategic pricing analytics</p>
+          </Card>
 
-            <Card className="p-6 shadow-elegant hover:shadow-lg transition-smooth">
-              <div className="flex items-start space-x-4">
-                <div className="bg-primary-light p-3 rounded-lg">
-                  <Target className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-heading mb-2">Innovation Focus</h3>
-                  <p className="text-body">Passionate about applying cutting-edge technology and mathematical models to solve complex business problems.</p>
-                </div>
-              </div>
-            </Card>
-          </div>
+          <Card className="p-6 shadow-elegant hover:shadow-lg transition-smooth text-center">
+            <div className="bg-primary-light p-3 rounded-lg w-fit mx-auto mb-4">
+              <Target className="h-6 w-6 text-primary" />
+            </div>
+            <h3 className="font-semibold text-heading mb-2">Innovation Focus</h3>
+            <p className="text-body text-sm">Applying technology to solve complex business problems</p>
+          </Card>
         </div>
       </div>
     </section>
