@@ -127,7 +127,8 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-gradient-bg font-dmsans;
+    @apply font-dmsans;
+    background: var(--gradient-bg);
     background-attachment: fixed;
   }
   
