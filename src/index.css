@@ -127,13 +127,14 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply font-dmsans;
+    font-family: 'DM Sans', sans-serif;
     background: var(--gradient-bg);
     background-attachment: fixed;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-space text-heading;
+    font-family: 'Space Grotesk', sans-serif;
+    color: hsl(var(--text-heading));
     letter-spacing: -0.025em;
   }
 }
