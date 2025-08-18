@@ -9,10 +9,10 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Core Colors - Modern Blue/Gray Palette */
-    --background: 225 15% 99%;
+    --background: 225 20% 94%;
     --foreground: 225 25% 12%;
 
-    --card: 0 0% 100%;
+    --card: 225 15% 97%;
     --card-foreground: 225 25% 12%;
 
     --popover: 0 0% 100%;
@@ -51,7 +51,7 @@ All colors MUST be HSL.
     /* Modern Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(212 100% 48%) 0%, hsl(220 90% 56%) 50%, hsl(212 100% 42%) 100%);
     --gradient-subtle: linear-gradient(135deg, hsl(225 15% 99%) 0%, hsl(225 10% 97%) 50%, hsl(225 15% 95%) 100%);
-    --gradient-bg: linear-gradient(135deg, hsl(225 15% 99%) 0%, hsl(225 20% 97%) 25%, hsl(225 25% 98%) 50%, hsl(220 20% 96%) 75%, hsl(225 15% 99%) 100%);
+    --gradient-bg: linear-gradient(135deg, hsl(225 20% 92%) 0%, hsl(225 25% 94%) 25%, hsl(225 20% 93%) 50%, hsl(220 25% 91%) 75%, hsl(225 20% 92%) 100%);
     
     /* Elegant Shadows */
     --shadow-sm: 0 1px 3px hsl(225 20% 20% / 0.08), 0 1px 2px hsl(225 20% 20% / 0.06);
@@ -80,27 +80,30 @@ All colors MUST be HSL.
     --sunset-primary-foreground: 0 0% 100%;
     --sunset-primary-hover: 15 100% 50%;
     --sunset-primary-light: 15 100% 96%;
-    --sunset-secondary: 35 100% 95%;
-    --sunset-accent: 25 100% 92%;
+    --sunset-secondary: 35 60% 90%;
+    --sunset-accent: 25 70% 88%;
     --sunset-gradient: linear-gradient(135deg, hsl(15 100% 55%) 0%, hsl(25 100% 60%) 50%, hsl(35 100% 65%) 100%);
+    --sunset-bg: linear-gradient(135deg, hsl(25 40% 88%) 0%, hsl(20 45% 90%) 25%, hsl(30 40% 89%) 50%, hsl(15 45% 87%) 75%, hsl(25 40% 88%) 100%);
     
     /* Ocean Scheme */
     --ocean-primary: 195 100% 45%;
     --ocean-primary-foreground: 0 0% 100%;
     --ocean-primary-hover: 195 100% 40%;
     --ocean-primary-light: 195 100% 96%;
-    --ocean-secondary: 200 100% 95%;
-    --ocean-accent: 190 100% 92%;
+    --ocean-secondary: 200 60% 90%;
+    --ocean-accent: 190 70% 88%;
     --ocean-gradient: linear-gradient(135deg, hsl(195 100% 45%) 0%, hsl(200 90% 50%) 50%, hsl(210 80% 55%) 100%);
+    --ocean-bg: linear-gradient(135deg, hsl(200 40% 88%) 0%, hsl(195 45% 90%) 25%, hsl(205 40% 89%) 50%, hsl(190 45% 87%) 75%, hsl(200 40% 88%) 100%);
     
     /* Forest Scheme */
     --forest-primary: 142 76% 36%;
     --forest-primary-foreground: 0 0% 100%;
     --forest-primary-hover: 142 76% 32%;
     --forest-primary-light: 142 76% 96%;
-    --forest-secondary: 120 50% 95%;
-    --forest-accent: 130 60% 92%;
+    --forest-secondary: 120 40% 90%;
+    --forest-accent: 130 50% 88%;
     --forest-gradient: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(150 70% 40%) 50%, hsl(160 65% 45%) 100%);
+    --forest-bg: linear-gradient(135deg, hsl(140 30% 88%) 0%, hsl(135 35% 90%) 25%, hsl(145 30% 89%) 50%, hsl(130 35% 87%) 75%, hsl(140 30% 88%) 100%);
   }
 
   .dark {
@@ -247,6 +250,7 @@ All colors MUST be HSL.
     --secondary: var(--sunset-secondary);
     --accent: var(--sunset-accent);
     --gradient-primary: var(--sunset-gradient);
+    --gradient-bg: var(--sunset-bg);
   }
   
   .scheme-ocean {
@@ -257,6 +261,7 @@ All colors MUST be HSL.
     --secondary: var(--ocean-secondary);
     --accent: var(--ocean-accent);
     --gradient-primary: var(--ocean-gradient);
+    --gradient-bg: var(--ocean-bg);
   }
   
   .scheme-forest {
@@ -267,6 +272,7 @@ All colors MUST be HSL.
     --secondary: var(--forest-secondary);
     --accent: var(--forest-accent);
     --gradient-primary: var(--forest-gradient);
+    --gradient-bg: var(--forest-bg);
   }
   
   .dark .scheme-sunset {
