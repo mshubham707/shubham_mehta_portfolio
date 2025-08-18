@@ -72,6 +72,35 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 225 25% 10%;
     --sidebar-border: 225 12% 88%;
     --sidebar-ring: 212 100% 48%;
+
+    /* Color Scheme Variants */
+    
+    /* Sunset Scheme */
+    --sunset-primary: 15 100% 55%;
+    --sunset-primary-foreground: 0 0% 100%;
+    --sunset-primary-hover: 15 100% 50%;
+    --sunset-primary-light: 15 100% 96%;
+    --sunset-secondary: 35 100% 95%;
+    --sunset-accent: 25 100% 92%;
+    --sunset-gradient: linear-gradient(135deg, hsl(15 100% 55%) 0%, hsl(25 100% 60%) 50%, hsl(35 100% 65%) 100%);
+    
+    /* Ocean Scheme */
+    --ocean-primary: 195 100% 45%;
+    --ocean-primary-foreground: 0 0% 100%;
+    --ocean-primary-hover: 195 100% 40%;
+    --ocean-primary-light: 195 100% 96%;
+    --ocean-secondary: 200 100% 95%;
+    --ocean-accent: 190 100% 92%;
+    --ocean-gradient: linear-gradient(135deg, hsl(195 100% 45%) 0%, hsl(200 90% 50%) 50%, hsl(210 80% 55%) 100%);
+    
+    /* Forest Scheme */
+    --forest-primary: 142 76% 36%;
+    --forest-primary-foreground: 0 0% 100%;
+    --forest-primary-hover: 142 76% 32%;
+    --forest-primary-light: 142 76% 96%;
+    --forest-secondary: 120 50% 95%;
+    --forest-accent: 130 60% 92%;
+    --forest-gradient: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(150 70% 40%) 50%, hsl(160 65% 45%) 100%);
   }
 
   .dark {
@@ -118,6 +147,32 @@ All colors MUST be HSL.
     --shadow-md: 0 4px 6px hsl(0 0% 0% / 0.4), 0 2px 4px hsl(0 0% 0% / 0.3);
     --shadow-lg: 0 10px 15px hsl(0 0% 0% / 0.5), 0 4px 6px hsl(0 0% 0% / 0.4);
     --shadow-elegant: 0 8px 30px hsl(212 100% 20% / 0.25), 0 2px 6px hsl(212 100% 20% / 0.15);
+
+    /* Dark Mode Color Scheme Variants */
+    
+    /* Sunset Scheme Dark */
+    --sunset-primary-dark: 15 90% 60%;
+    --sunset-primary-hover-dark: 15 90% 65%;
+    --sunset-primary-light-dark: 15 90% 15%;
+    --sunset-secondary-dark: 35 40% 12%;
+    --sunset-accent-dark: 25 30% 15%;
+    --sunset-gradient-dark: linear-gradient(135deg, hsl(15 90% 60%) 0%, hsl(25 80% 65%) 50%, hsl(35 70% 70%) 100%);
+    
+    /* Ocean Scheme Dark */
+    --ocean-primary-dark: 195 90% 55%;
+    --ocean-primary-hover-dark: 195 90% 60%;
+    --ocean-primary-light-dark: 195 90% 15%;
+    --ocean-secondary-dark: 200 40% 12%;
+    --ocean-accent-dark: 190 30% 15%;
+    --ocean-gradient-dark: linear-gradient(135deg, hsl(195 90% 55%) 0%, hsl(200 80% 60%) 50%, hsl(210 70% 65%) 100%);
+    
+    /* Forest Scheme Dark */
+    --forest-primary-dark: 142 70% 45%;
+    --forest-primary-hover-dark: 142 70% 50%;
+    --forest-primary-light-dark: 142 70% 15%;
+    --forest-secondary-dark: 120 30% 12%;
+    --forest-accent-dark: 130 40% 15%;
+    --forest-gradient-dark: linear-gradient(135deg, hsl(142 70% 45%) 0%, hsl(150 60% 50%) 50%, hsl(160 55% 55%) 100%);
   }
 }
 
@@ -181,5 +236,63 @@ All colors MUST be HSL.
   
   .gradient-bg {
     background: var(--gradient-bg);
+  }
+  
+  /* Color Scheme Utility Classes */
+  .scheme-sunset {
+    --primary: var(--sunset-primary);
+    --primary-foreground: var(--sunset-primary-foreground);
+    --primary-hover: var(--sunset-primary-hover);
+    --primary-light: var(--sunset-primary-light);
+    --secondary: var(--sunset-secondary);
+    --accent: var(--sunset-accent);
+    --gradient-primary: var(--sunset-gradient);
+  }
+  
+  .scheme-ocean {
+    --primary: var(--ocean-primary);
+    --primary-foreground: var(--ocean-primary-foreground);
+    --primary-hover: var(--ocean-primary-hover);
+    --primary-light: var(--ocean-primary-light);
+    --secondary: var(--ocean-secondary);
+    --accent: var(--ocean-accent);
+    --gradient-primary: var(--ocean-gradient);
+  }
+  
+  .scheme-forest {
+    --primary: var(--forest-primary);
+    --primary-foreground: var(--forest-primary-foreground);
+    --primary-hover: var(--forest-primary-hover);
+    --primary-light: var(--forest-primary-light);
+    --secondary: var(--forest-secondary);
+    --accent: var(--forest-accent);
+    --gradient-primary: var(--forest-gradient);
+  }
+  
+  .dark .scheme-sunset {
+    --primary: var(--sunset-primary-dark);
+    --primary-hover: var(--sunset-primary-hover-dark);
+    --primary-light: var(--sunset-primary-light-dark);
+    --secondary: var(--sunset-secondary-dark);
+    --accent: var(--sunset-accent-dark);
+    --gradient-primary: var(--sunset-gradient-dark);
+  }
+  
+  .dark .scheme-ocean {
+    --primary: var(--ocean-primary-dark);
+    --primary-hover: var(--ocean-primary-hover-dark);
+    --primary-light: var(--ocean-primary-light-dark);
+    --secondary: var(--ocean-secondary-dark);
+    --accent: var(--ocean-accent-dark);
+    --gradient-primary: var(--ocean-gradient-dark);
+  }
+  
+  .dark .scheme-forest {
+    --primary: var(--forest-primary-dark);
+    --primary-hover: var(--forest-primary-hover-dark);
+    --primary-light: var(--forest-primary-light-dark);
+    --secondary: var(--forest-secondary-dark);
+    --accent: var(--forest-accent-dark);
+    --gradient-primary: var(--forest-gradient-dark);
   }
 }
