@@ -208,6 +208,32 @@ All colors MUST be HSL.
   .text-light {
     color: hsl(var(--text-light));
   }
+}
+
+/* Custom clip paths for shapes */
+.clip-hexagon {
+  clip-path: polygon(50% 0%, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
+}
+
+.clip-triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Typing effect */
+.typing-effect {
+  border-right: 2px solid;
+  animation: typing 3s steps(20) infinite, blink 1s ease-in-out infinite;
+}
+
+@keyframes typing {
+  0%, 50%, 100% { border-color: transparent; }
+  25%, 75% { border-color: currentColor; }
+}
+
+@keyframes blink {
+  0%, 50% { border-color: currentColor; }
+  51%, 100% { border-color: transparent; }
+}
   
   .shadow-elegant {
     box-shadow: var(--shadow-md);
