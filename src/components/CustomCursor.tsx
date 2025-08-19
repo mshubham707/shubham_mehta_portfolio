@@ -45,10 +45,10 @@ const CustomCursor = () => {
     <>
       {/* Main Cursor */}
       <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-50 mix-blend-difference"
+        className="fixed top-0 left-0 pointer-events-none z-50"
         animate={{
-          x: mousePosition.x - 10,
-          y: mousePosition.y - 10,
+          x: mousePosition.x - 8,
+          y: mousePosition.y - 8,
           scale: isHovering ? 1.5 : 1,
         }}
         transition={{
@@ -58,15 +58,15 @@ const CustomCursor = () => {
           mass: 0.5
         }}
       >
-        <div className="w-5 h-5 bg-white rounded-full" />
+        <div className="w-4 h-4 bg-primary border-2 border-background rounded-full shadow-lg" />
       </motion.div>
 
       {/* Cursor Glow */}
       <motion.div
         className="fixed top-0 left-0 pointer-events-none z-40"
         animate={{
-          x: mousePosition.x - 15,
-          y: mousePosition.y - 15,
+          x: mousePosition.x - 12,
+          y: mousePosition.y - 12,
           scale: isHovering ? 2 : 1,
         }}
         transition={{
@@ -75,7 +75,7 @@ const CustomCursor = () => {
           damping: 30,
         }}
       >
-        <div className="w-8 h-8 bg-primary/20 rounded-full blur-md" />
+        <div className="w-6 h-6 bg-primary/30 rounded-full blur-sm" />
       </motion.div>
 
       {/* Trail */}
