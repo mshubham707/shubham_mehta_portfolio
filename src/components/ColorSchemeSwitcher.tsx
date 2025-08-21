@@ -1,11 +1,37 @@
 import { Button } from "@/components/ui/button";
-import { Palette } from "lucide-react";
-import { useState } from "react";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Palette, Moon, Sun } from "lucide-react";
+import { useState, useEffect } from "react";
 
 type ColorScheme = 'default' | 'sunset' | 'ocean' | 'forest';
 
 const ColorSchemeSwitcher = () => {
   const [currentScheme, setCurrentScheme] = useState<ColorScheme>('default');
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check for saved theme preference or default to light mode
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      setIsDarkMode(true);
+      document.documentElement.classList.add('dark');
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    const newDarkMode = !isDarkMode;
+    setIsDarkMode(newDarkMode);
+    
+    if (newDarkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  };
 
   const applyColorScheme = (scheme: ColorScheme) => {
     const body = document.body;
@@ -30,29 +56,66 @@ const ColorSchemeSwitcher = () => {
 
   return (
     <div className="fixed top-4 right-4 z-50">
-      <div className="bg-card border border-border rounded-lg p-2 shadow-lg">
-        <div className="flex items-center gap-2 mb-2">
-          <Palette className="h-4 w-4 text-muted-foreground" />
-          <span className="text-sm font-medium text-foreground">Color Scheme</span>
-        </div>
-        <div className="grid grid-cols-2 gap-2">
-          {schemes.map((scheme) => (
-            <Button
-              key={scheme.value}
-              variant={currentScheme === scheme.value ? "default" : "outline"}
-              size="sm"
-              onClick={() => applyColorScheme(scheme.value)}
-              className="h-8 text-xs relative"
-            >
-              <div 
-                className="w-3 h-3 rounded-full mr-2" 
-                style={{ backgroundColor: scheme.color }}
-              />
-              {scheme.name}
-            </Button>
-          ))}
-        </div>
-      </div>
+      <Popover>
+        <PopoverTrigger asChild>
+          <Button
+            variant="outline"
+            size="sm"
+            className="bg-card border-border shadow-lg hover:bg-accent"
+          >
+            <Palette className="h-4 w-4 mr-1" />
+            Theme
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent className="w-64 p-4" align="end">
+          <div className="space-y-4">
+            {/* Dark Mode Toggle */}
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                {isDarkMode ? (
+                  <Moon className="h-4 w-4 text-muted-foreground" />
+                ) : (
+                  <Sun className="h-4 w-4 text-muted-foreground" />
+                )}
+                <span className="text-sm font-medium">Dark Mode</span>
+              </div>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={toggleDarkMode}
+                className="h-8 px-3"
+              >
+                {isDarkMode ? 'Light' : 'Dark'}
+              </Button>
+            </div>
+            
+            {/* Color Schemes */}
+            <div>
+              <div className="flex items-center gap-2 mb-3">
+                <Palette className="h-4 w-4 text-muted-foreground" />
+                <span className="text-sm font-medium">Color Scheme</span>
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                {schemes.map((scheme) => (
+                  <Button
+                    key={scheme.value}
+                    variant={currentScheme === scheme.value ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => applyColorScheme(scheme.value)}
+                    className="h-8 text-xs justify-start"
+                  >
+                    <div 
+                      className="w-3 h-3 rounded-full mr-2 flex-shrink-0" 
+                      style={{ backgroundColor: scheme.color }}
+                    />
+                    {scheme.name}
+                  </Button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </PopoverContent>
+      </Popover>
     </div>
   );
 };
