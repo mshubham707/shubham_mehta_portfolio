@@ -34,19 +34,19 @@ const Footer = () => {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com/in/shubham-mehta-analyst",
+      url: "https://www.linkedin.com/in/shubham-mehta-4b582418a/",
       color: "hover:text-blue-600"
     },
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/shubham-mehta",
+      url: "https://github.com/mshubham707?tab=repositories",
       color: "hover:text-gray-900"
     },
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:shubham.mehta@example.com",
+      url: "mailto:mshubham707@gmail.com",
       color: "hover:text-red-600"
     }
   ];
