@@ -6,23 +6,23 @@ const Experience = () => {
   const achievements = [
     {
       icon: TrendingUp,
-      text: "Led pricing and inventory strategies in Dubai, Thailand, and South East Asia, achieving 40% YoY RASK growth against 26% ASK increase"
+      text: "Achieved 40% YoY RASK (Revenue per Available Seat Kilometer) growth through strategic pricing analytics"
     },
     {
       icon: BarChart3,
-      text: "Developed automated dashboards using SQL, Python, Excel, and Power BI, reducing manual work hours by 30%"
+      text: "Automated revenue dashboards using SQL, Excel, and Power BI, reducing manual reporting time by 60%"
     },
     {
       icon: Zap,
-      text: "Leading Revenue Management system transformation for 100+ professionals, handling selection, design, testing, and upgrades"
+      text: "Implemented dynamic pricing models that optimized fare structures across domestic and international routes"
     },
     {
       icon: Trophy,
-      text: "Awarded 'Debutant of the Year (2022-23)' and multiple 'Employee of the Month' honors for exceptional performance"
+      text: "Recognized for excellence in revenue optimization and awarded 'Outstanding Performer' for Q2 2023"
     }
   ];
 
-  const skills = ["Revenue Analytics", "Pricing Strategy", "Advanced SQL", "Python", "Power BI", "Tableau", "Machine Learning", "Flask Development", "AWS", "Advanced Excel"];
+  const skills = ["Revenue Analytics", "Pricing Strategy", "SQL", "Excel", "Power BI", "Python", "Data Visualization"];
 
   return (
     <section id="experience" className="py-20 px-4 bg-secondary">
@@ -41,7 +41,7 @@ const Experience = () => {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div>
                 <h3 className="text-2xl font-bold text-heading font-montserrat mb-2">
-                  Senior Revenue Analyst
+                  Revenue Analyst
                 </h3>
                 <p className="text-xl text-primary font-semibold mb-4">IndiGo Airlines</p>
               </div>

@@ -9,10 +9,10 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Core Colors - Modern Blue/Gray Palette */
-    --background: 225 20% 94%;
+    --background: 225 15% 99%;
     --foreground: 225 25% 12%;
 
-    --card: 225 15% 97%;
+    --card: 0 0% 100%;
     --card-foreground: 225 25% 12%;
 
     --popover: 0 0% 100%;
@@ -51,7 +51,7 @@ All colors MUST be HSL.
     /* Modern Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(212 100% 48%) 0%, hsl(220 90% 56%) 50%, hsl(212 100% 42%) 100%);
     --gradient-subtle: linear-gradient(135deg, hsl(225 15% 99%) 0%, hsl(225 10% 97%) 50%, hsl(225 15% 95%) 100%);
-    --gradient-bg: linear-gradient(135deg, hsl(225 20% 82%) 0%, hsl(225 25% 84%) 25%, hsl(225 20% 83%) 50%, hsl(220 25% 81%) 75%, hsl(225 20% 82%) 100%);
+    --gradient-bg: linear-gradient(135deg, hsl(225 15% 99%) 0%, hsl(225 20% 97%) 25%, hsl(225 25% 98%) 50%, hsl(220 20% 96%) 75%, hsl(225 15% 99%) 100%);
     
     /* Elegant Shadows */
     --shadow-sm: 0 1px 3px hsl(225 20% 20% / 0.08), 0 1px 2px hsl(225 20% 20% / 0.06);
@@ -80,30 +80,27 @@ All colors MUST be HSL.
     --sunset-primary-foreground: 0 0% 100%;
     --sunset-primary-hover: 15 100% 50%;
     --sunset-primary-light: 15 100% 96%;
-    --sunset-secondary: 35 60% 90%;
-    --sunset-accent: 25 70% 88%;
+    --sunset-secondary: 35 100% 95%;
+    --sunset-accent: 25 100% 92%;
     --sunset-gradient: linear-gradient(135deg, hsl(15 100% 55%) 0%, hsl(25 100% 60%) 50%, hsl(35 100% 65%) 100%);
-    --sunset-bg: linear-gradient(135deg, hsl(25 40% 78%) 0%, hsl(20 45% 80%) 25%, hsl(30 40% 79%) 50%, hsl(15 45% 77%) 75%, hsl(25 40% 78%) 100%);
     
     /* Ocean Scheme */
     --ocean-primary: 195 100% 45%;
     --ocean-primary-foreground: 0 0% 100%;
     --ocean-primary-hover: 195 100% 40%;
     --ocean-primary-light: 195 100% 96%;
-    --ocean-secondary: 200 60% 90%;
-    --ocean-accent: 190 70% 88%;
+    --ocean-secondary: 200 100% 95%;
+    --ocean-accent: 190 100% 92%;
     --ocean-gradient: linear-gradient(135deg, hsl(195 100% 45%) 0%, hsl(200 90% 50%) 50%, hsl(210 80% 55%) 100%);
-    --ocean-bg: linear-gradient(135deg, hsl(200 40% 78%) 0%, hsl(195 45% 80%) 25%, hsl(205 40% 79%) 50%, hsl(190 45% 77%) 75%, hsl(200 40% 78%) 100%);
     
     /* Forest Scheme */
     --forest-primary: 142 76% 36%;
     --forest-primary-foreground: 0 0% 100%;
     --forest-primary-hover: 142 76% 32%;
     --forest-primary-light: 142 76% 96%;
-    --forest-secondary: 120 40% 90%;
-    --forest-accent: 130 50% 88%;
+    --forest-secondary: 120 50% 95%;
+    --forest-accent: 130 60% 92%;
     --forest-gradient: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(150 70% 40%) 50%, hsl(160 65% 45%) 100%);
-    --forest-bg: linear-gradient(135deg, hsl(140 30% 78%) 0%, hsl(135 35% 80%) 25%, hsl(145 30% 79%) 50%, hsl(130 35% 77%) 75%, hsl(140 30% 78%) 100%);
   }
 
   .dark {
@@ -240,109 +237,62 @@ All colors MUST be HSL.
   .gradient-bg {
     background: var(--gradient-bg);
   }
-}
-
-/* Color Scheme Utility Classes */
-.scheme-sunset {
-  --primary: var(--sunset-primary);
-  --primary-foreground: var(--sunset-primary-foreground);
-  --primary-hover: var(--sunset-primary-hover);
-  --primary-light: var(--sunset-primary-light);
-  --secondary: var(--sunset-secondary);
-  --accent: var(--sunset-accent);
-  --gradient-primary: var(--sunset-gradient);
-  --gradient-bg: var(--sunset-bg);
-}
-
-.scheme-ocean {
-  --primary: var(--ocean-primary);
-  --primary-foreground: var(--ocean-primary-foreground);
-  --primary-hover: var(--ocean-primary-hover);
-  --primary-light: var(--ocean-primary-light);
-  --secondary: var(--ocean-secondary);
-  --accent: var(--ocean-accent);
-  --gradient-primary: var(--ocean-gradient);
-  --gradient-bg: var(--ocean-bg);
-}
-
-.scheme-forest {
-  --primary: var(--forest-primary);
-  --primary-foreground: var(--forest-primary-foreground);
-  --primary-hover: var(--forest-primary-hover);
-  --primary-light: var(--forest-primary-light);
-  --secondary: var(--forest-secondary);
-  --accent: var(--forest-accent);
-  --gradient-primary: var(--forest-gradient);
-  --gradient-bg: var(--forest-bg);
-}
-
-.dark .scheme-sunset {
-  --primary: var(--sunset-primary-dark);
-  --primary-hover: var(--sunset-primary-hover-dark);
-  --primary-light: var(--sunset-primary-light-dark);
-  --secondary: var(--sunset-secondary-dark);
-  --accent: var(--sunset-accent-dark);
-  --gradient-primary: var(--sunset-gradient-dark);
-}
-
-.dark .scheme-ocean {
-  --primary: var(--ocean-primary-dark);
-  --primary-hover: var(--ocean-primary-hover-dark);
-  --primary-light: var(--ocean-primary-light-dark);
-  --secondary: var(--ocean-secondary-dark);
-  --accent: var(--ocean-accent-dark);
-  --gradient-primary: var(--ocean-gradient-dark);
-}
-
-.dark .scheme-forest {
-  --primary: var(--forest-primary-dark);
-  --primary-hover: var(--forest-primary-hover-dark);
-  --primary-light: var(--forest-primary-light-dark);
-  --secondary: var(--forest-secondary-dark);
-  --accent: var(--forest-accent-dark);
-  --gradient-primary: var(--forest-gradient-dark);
-}
-
-/* Custom clip paths for shapes */
-.clip-hexagon {
-  clip-path: polygon(50% 0%, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
-}
-
-.clip-triangle {
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-
-.clip-star {
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-}
-
-/* Typing effect */
-.typing-effect {
-  border-right: 2px solid;
-  animation: typing 3s steps(20) infinite, blink 1s ease-in-out infinite;
-}
-
-@keyframes typing {
-  0%, 50%, 100% { border-color: transparent; }
-  25%, 75% { border-color: currentColor; }
-}
-
-@keyframes blink {
-  0%, 50% { border-color: currentColor; }
-  51%, 100% { border-color: transparent; }
-}
-
-/* Hide default cursor on the main area */
-* {
-  cursor: none !important;
-}
-
-/* But show cursor on form elements */
-input, textarea, select, button, [role="button"] {
-  cursor: pointer !important;
-}
-
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
+  
+  /* Color Scheme Utility Classes */
+  .scheme-sunset {
+    --primary: var(--sunset-primary);
+    --primary-foreground: var(--sunset-primary-foreground);
+    --primary-hover: var(--sunset-primary-hover);
+    --primary-light: var(--sunset-primary-light);
+    --secondary: var(--sunset-secondary);
+    --accent: var(--sunset-accent);
+    --gradient-primary: var(--sunset-gradient);
+  }
+  
+  .scheme-ocean {
+    --primary: var(--ocean-primary);
+    --primary-foreground: var(--ocean-primary-foreground);
+    --primary-hover: var(--ocean-primary-hover);
+    --primary-light: var(--ocean-primary-light);
+    --secondary: var(--ocean-secondary);
+    --accent: var(--ocean-accent);
+    --gradient-primary: var(--ocean-gradient);
+  }
+  
+  .scheme-forest {
+    --primary: var(--forest-primary);
+    --primary-foreground: var(--forest-primary-foreground);
+    --primary-hover: var(--forest-primary-hover);
+    --primary-light: var(--forest-primary-light);
+    --secondary: var(--forest-secondary);
+    --accent: var(--forest-accent);
+    --gradient-primary: var(--forest-gradient);
+  }
+  
+  .dark .scheme-sunset {
+    --primary: var(--sunset-primary-dark);
+    --primary-hover: var(--sunset-primary-hover-dark);
+    --primary-light: var(--sunset-primary-light-dark);
+    --secondary: var(--sunset-secondary-dark);
+    --accent: var(--sunset-accent-dark);
+    --gradient-primary: var(--sunset-gradient-dark);
+  }
+  
+  .dark .scheme-ocean {
+    --primary: var(--ocean-primary-dark);
+    --primary-hover: var(--ocean-primary-hover-dark);
+    --primary-light: var(--ocean-primary-light-dark);
+    --secondary: var(--ocean-secondary-dark);
+    --accent: var(--ocean-accent-dark);
+    --gradient-primary: var(--ocean-gradient-dark);
+  }
+  
+  .dark .scheme-forest {
+    --primary: var(--forest-primary-dark);
+    --primary-hover: var(--forest-primary-hover-dark);
+    --primary-light: var(--forest-primary-light-dark);
+    --secondary: var(--forest-secondary-dark);
+    --accent: var(--forest-accent-dark);
+    --gradient-primary: var(--forest-gradient-dark);
+  }
 }

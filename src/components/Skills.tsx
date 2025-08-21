@@ -13,43 +13,39 @@ import {
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Programming & Development",
+      title: "Programming Languages",
       icon: Code,
       skills: [
-        { name: "Python", level: "Advanced", description: "Pandas, NumPy, Matplotlib, Plotly, Seaborn, Scikit-Learn" },
-        { name: "SQL", level: "Advanced", description: "Joins, CTEs, Window Functions, Complex Queries" },
-        { name: "Flask", level: "Intermediate", description: "Web Development, API Creation, Dashboard Deployment" },
-        { name: "JavaScript/HTML/CSS", level: "Intermediate", description: "Frontend Development, Tailwind CSS" }
+        { name: "Python", level: "Advanced", description: "Pandas, NumPy, Scikit-Learn" },
+        { name: "SQL", level: "Advanced", description: "Joins, CTEs, Window Functions" },
+        { name: "R", level: "Intermediate", description: "Statistical Analysis, ggplot2" }
       ]
     },
     {
-      title: "Machine Learning & Analytics",
+      title: "Machine Learning",
       icon: Brain,
       skills: [
-        { name: "Supervised Learning", level: "Advanced", description: "Lasso, Ridge, SVM, Naive Bayes, XGBoost" },
-        { name: "Unsupervised Learning", level: "Advanced", description: "K-Means, PCA, KNN, DBSCAN" },
-        { name: "Model Deployment", level: "Intermediate", description: "Pipeline Development, Performance Monitoring" },
-        { name: "Statistical Analysis", level: "Advanced", description: "Economic Modeling, Hypothesis Testing" }
+        { name: "XGBoost", level: "Advanced", description: "Gradient Boosting, Hyperparameter Tuning" },
+        { name: "K-Means", level: "Intermediate", description: "Clustering, Customer Segmentation" },
+        { name: "Linear Regression", level: "Advanced", description: "Predictive Modeling, Feature Engineering" }
       ]
     },
     {
       title: "Business Intelligence",
       icon: BarChart3,
       skills: [
-        { name: "Advanced Excel", level: "Expert", description: "Lookups, Pivot Tables, Macros, VBA" },
         { name: "Tableau", level: "Advanced", description: "Interactive Dashboards, Data Storytelling" },
-        { name: "Power BI", level: "Advanced", description: "DAX, Power Query, Executive Reports" },
-        { name: "Data Visualization", level: "Advanced", description: "Plotly, Seaborn, Matplotlib" }
+        { name: "Power BI", level: "Advanced", description: "DAX, Power Query, Reports" },
+        { name: "Excel", level: "Expert", description: "Advanced Formulas, Pivot Tables, VBA" }
       ]
     },
     {
-      title: "Cloud & Infrastructure",
+      title: "Data Engineering",
       icon: Database,
       skills: [
-        { name: "AWS", level: "Intermediate", description: "Cloud Analytics, Data Storage, Deployment" },
-        { name: "Data Pipelines", level: "Intermediate", description: "ETL Processes, Automation" },
-        { name: "Version Control", level: "Intermediate", description: "Git, GitHub, Collaborative Development" },
-        { name: "Database Management", level: "Advanced", description: "Query Optimization, Performance Tuning" }
+        { name: "ETL Processes", level: "Intermediate", description: "Data Pipeline, Automation" },
+        { name: "Data Warehousing", level: "Intermediate", description: "Schema Design, Optimization" },
+        { name: "APIs", level: "Intermediate", description: "REST APIs, Data Integration" }
       ]
     }
   ];
