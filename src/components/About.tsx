@@ -18,23 +18,28 @@ const About = () => {
           <div className="space-y-6 text-center">
             <p className="text-lg text-body leading-relaxed">
               I am <span className="font-semibold text-heading">Shubham Mehta</span>, 
-              an Economics Honors graduate from Ramanujan College, Delhi University. 
-              My academic journey took an interesting turn when I switched from science 
-              due to a teacher's inspiring teaching methodology, which sparked my passion 
-              for economics and analytical thinking.
+              a results-driven data analytics professional with 3 years of experience in the aviation industry. 
+              My academic journey took an interesting turn when I switched from science to Economics due to a 
+              teacher's inspiring methodology, which sparked my passion for analytical thinking and economic modeling.
             </p>
             
             <p className="text-lg text-body leading-relaxed">
-              Currently working as a Revenue Analyst at IndiGo, I leverage advanced analytics 
-              for pricing strategies and process automation. My role involves transforming 
-              complex data into actionable insights that drive revenue optimization and 
-              strategic decision-making.
+              Currently serving as a <span className="font-semibold text-heading">Senior Revenue Analyst at IndiGo</span>, 
+              I lead pricing and inventory strategies across key markets including Dubai, Thailand, and South East Asia. 
+              I've achieved remarkable results: up to 40% year-over-year growth in Revenue per Available Seat Kilometer (RASK) 
+              against a 26% increase in Available Seat Kilometers (ASKs), while reducing manual work hours by 30%.
             </p>
             
             <p className="text-lg text-body leading-relaxed">
-              I'm passionate about technology, mathematics, and their practical applications 
-              in data science. My goal is to bridge the gap between economic theory and 
-              real-world business challenges through innovative data-driven solutions.
+              My philosophy is inspired by Einstein's insight that "compound interest is the eighth wonder of the world." 
+              I believe consistent, focused effort in data science creates exponential impact. Beyond personal achievement, 
+              I'm passionate about giving back to society and believe true success lies in contributing equally to the world around us.
+            </p>
+            
+            <p className="text-lg text-body leading-relaxed">
+              When I'm not diving into datasets, you'll find me exploring economics literature, following fintech trends, 
+              playing cricket, hitting the gym, listening to podcasts, or planning my next travel adventure. Always open to 
+              book recommendations, especially non-fiction!
             </p>
           </div>
         </div>
@@ -54,7 +59,7 @@ const About = () => {
               <TrendingUp className="h-6 w-6 text-primary" />
             </div>
             <h3 className="font-semibold text-heading mb-2">Revenue Growth</h3>
-            <p className="text-body text-sm">40% YoY RASK growth through strategic pricing analytics</p>
+            <p className="text-body text-sm">40% YoY RASK growth with 26% ASK increase across key Asian markets</p>
           </Card>
 
           <Card className="p-6 shadow-elegant hover:shadow-lg transition-smooth text-center">

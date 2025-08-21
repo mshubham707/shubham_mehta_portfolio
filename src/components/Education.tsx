@@ -20,15 +20,15 @@ const Education = () => {
       status: "Completed"
     },
     {
-      degree: "Professional Certificate in Data Science",
+      degree: "Data Analytics Certification",
       institution: "PW Skills (Physics Wallah)",
       duration: "October 2024 - August 2025 (Expected)",
-      subjects: ["Python Programming", "SQL Database Management", "Machine Learning", "Data Analytics"],
+      subjects: ["Python Programming", "Advanced SQL", "Machine Learning", "AWS Cloud Analytics"],
       highlights: [
-        "Comprehensive hands-on training in Python for Data Science",
-        "Advanced SQL techniques for database management",
-        "Machine Learning algorithms and implementation",
-        "Real-world project-based learning approach"
+        "Mastering Python for Data Science and ML implementation",
+        "Advanced SQL techniques and database optimization",
+        "End-to-end machine learning pipeline development",
+        "AWS cloud analytics and deployment strategies"
       ],
       icon: BookOpen,
       status: "In Progress"

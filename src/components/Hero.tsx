@@ -33,15 +33,15 @@ const Hero = () => {
             Shubham Mehta
           </h1>
           <p className="text-xl md:text-2xl text-body font-medium max-w-3xl mx-auto leading-relaxed">
-            Economics Graduate | Data Enthusiast Optimizing Revenue with Python & ML
+            Data Analytics Professional | 3 Years Aviation Industry Experience | Turning Data Into Strategic Impact
           </p>
         </div>
 
         {/* Description */}
         <div className="mb-8 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <p className="text-lg text-light max-w-2xl mx-auto leading-relaxed">
-            Revenue Analyst at IndiGo, passionate about transforming data into actionable insights 
-            for strategic decision-making and business optimization.
+            I transform complex datasets into actionable business strategies, specializing in aviation analytics 
+            with a proven track record of driving operational optimization and strategic decision-making.
           </p>
         </div>
 
