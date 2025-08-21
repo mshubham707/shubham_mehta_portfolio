@@ -6,23 +6,23 @@ const Experience = () => {
   const achievements = [
     {
       icon: TrendingUp,
-      text: "Achieved 40% YoY RASK (Revenue per Available Seat Kilometer) growth through strategic pricing analytics"
+      text: "Led pricing and inventory strategies in Dubai, Thailand, and South East Asia, achieving up to 40% YoY RASK growth against 26% ASK increase"
     },
     {
       icon: BarChart3,
-      text: "Automated revenue dashboards using SQL, Excel, and Power BI, reducing manual reporting time by 60%"
+      text: "Developed automated dashboards using SQL, Python, Excel, and Power BI to track KPIs, reducing manual work hours by 30%"
     },
     {
       icon: Zap,
-      text: "Implemented dynamic pricing models that optimized fare structures across domestic and international routes"
+      text: "Leading Revenue Management system transformation among 100+ professionals, handling selection, design, testing, and upgrades"
     },
     {
       icon: Trophy,
-      text: "Recognized for excellence in revenue optimization and awarded 'Outstanding Performer' for Q2 2023"
+      text: "Recognized with 'Debutant of the Year (2022-23)' and multiple 'Employee of the Month' honors for exceptional performance"
     }
   ];
 
-  const skills = ["Revenue Analytics", "Pricing Strategy", "SQL", "Excel", "Power BI", "Python", "Data Visualization"];
+  const skills = ["Advanced Excel", "Python", "SQL", "Machine Learning", "Tableau", "Power BI", "AWS", "Flask", "Data Analytics"];
 
   return (
     <section id="experience" className="py-20 px-4 bg-secondary">
@@ -41,7 +41,7 @@ const Experience = () => {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div>
                 <h3 className="text-2xl font-bold text-heading font-montserrat mb-2">
-                  Revenue Analyst
+                  Senior Revenue Analyst
                 </h3>
                 <p className="text-xl text-primary font-semibold mb-4">IndiGo Airlines</p>
               </div>

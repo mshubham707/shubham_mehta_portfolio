@@ -17,24 +17,22 @@ const About = () => {
         <div className="max-w-4xl mx-auto mb-12">
           <div className="space-y-6 text-center">
             <p className="text-lg text-body leading-relaxed">
-              I am <span className="font-semibold text-heading">Shubham Mehta</span>, 
-              an Economics Honors graduate from Ramanujan College, Delhi University. 
-              My academic journey took an interesting turn when I switched from science 
-              due to a teacher's inspiring teaching methodology, which sparked my passion 
-              for economics and analytical thinking.
+              I'm <span className="font-semibold text-heading">Shubham Mehta</span>, 
+              a results-driven data analytics professional with 3 years of experience in the aviation industry. 
+              As a Senior Revenue Analyst at IndiGo, I leverage data to drive strategic decisions, optimize revenue, 
+              and solve complex business problems across key markets like Dubai, Thailand, and South East Asia.
             </p>
             
             <p className="text-lg text-body leading-relaxed">
-              Currently working as a Revenue Analyst at IndiGo, I leverage advanced analytics 
-              for pricing strategies and process automation. My role involves transforming 
-              complex data into actionable insights that drive revenue optimization and 
-              strategic decision-making.
+              My journey began with a B.A. (Hons) in Economics from Ramanujan College, Delhi University (CGPA: 8.784), 
+              where I switched from science due to inspiring teaching that sparked my passion for economics and analytical thinking. 
+              This foundation in economic modeling and statistical analysis gives me a unique lens for interpreting business data.
             </p>
             
             <p className="text-lg text-body leading-relaxed">
-              I'm passionate about technology, mathematics, and their practical applications 
-              in data science. My goal is to bridge the gap between economic theory and 
-              real-world business challenges through innovative data-driven solutions.
+              Inspired by Einstein's insight that "compound interest is the eighth wonder of the world," I believe consistent, 
+              focused effort in data science creates exponential impact. Every dataset tells a story—I help businesses read between 
+              the lines and act on those insights. Data science is where my passions converge: mathematics, technology, and logical problem-solving.
             </p>
           </div>
         </div>
