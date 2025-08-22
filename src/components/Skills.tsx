@@ -26,7 +26,7 @@ const Skills = () => {
       icon: Brain,
       skills: [
         { name: "Supervised Learning", level: "Advanced", description: "Lasso, Ridge, SVM, Naive Bayes, XGBoost" },
-        { name: "Unsupervised Learning", level: "Intermediate", description: "K-Means, PCA, KNN, DBSCAN Clustering" },
+        { name: "Unsupervised Learning", level: "Advanced", description: "K-Means, PCA, KNN, DBSCAN Clustering" },
         { name: "Model Optimization", level: "Advanced", description: "Feature Engineering, Hyperparameter Tuning, Cross-validation" }
       ]
     },

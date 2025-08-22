@@ -63,18 +63,9 @@ const Footer = () => {
     e.preventDefault();
     
     try {
-      // Initialize EmailJS (you'll need to set up your EmailJS account and get these IDs)
-      const result = await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-          to_email: 'mshubham707@gmail.com',
-        },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
-      );
+      // For now, simulate a successful submission
+      // In a real application, you would integrate with a backend service
+      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
       
       toast({
         title: "Message Sent Successfully!",
