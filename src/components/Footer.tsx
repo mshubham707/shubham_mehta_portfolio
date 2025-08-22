@@ -63,9 +63,17 @@ const Footer = () => {
     e.preventDefault();
     
     try {
-      // For now, simulate a successful submission
-      // In a real application, you would integrate with a backend service
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
+      const result = await emailjs.send(
+        'service_k8j2l4p', // EmailJS service ID
+        'template_portfolio', // EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: 'mshubham707@gmail.com',
+        },
+        'dQvR8vNu2FwqtPxAX' // EmailJS public key
+      );
       
       toast({
         title: "Message Sent Successfully!",
@@ -73,6 +81,7 @@ const Footer = () => {
       });
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
+      console.error('EmailJS Error:', error);
       toast({
         title: "Failed to send message",
         description: "Please try again later or contact me directly at mshubham707@gmail.com",
