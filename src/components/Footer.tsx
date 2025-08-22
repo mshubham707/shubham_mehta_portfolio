@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
 import { 
   Mail, 
   Linkedin, 
@@ -58,14 +59,35 @@ const Footer = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-    setFormData({ name: '', email: '', message: '' });
+    
+    try {
+      // Initialize EmailJS (you'll need to set up your EmailJS account and get these IDs)
+      const result = await emailjs.send(
+        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: 'mshubham707@gmail.com',
+        },
+        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+      );
+      
+      toast({
+        title: "Message Sent Successfully!",
+        description: "Thank you for reaching out. I'll get back to you soon.",
+      });
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      toast({
+        title: "Failed to send message",
+        description: "Please try again later or contact me directly at mshubham707@gmail.com",
+        variant: "destructive"
+      });
+    }
   };
 
   return (

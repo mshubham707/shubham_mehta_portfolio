@@ -16,8 +16,8 @@ const Projects = () => {
         "Passenger satisfaction metrics",
         "Predictive demand modeling"
       ],
-      demoLink: "https://airline-dashboard-demo.render.com",
-      githubLink: "https://github.com/shubham-mehta/airline-dashboard",
+      demoLink: "https://airline-kpi-dashboard.onrender.com/",
+      githubLink: "https://github.com/mshubham707/Airline-KPI-Dashboard",
       status: "Live Demo"
     },
     {
@@ -31,7 +31,7 @@ const Projects = () => {
         "Cost reduction analysis",
         "Environmental impact assessment"
       ],
-      githubLink: "https://github.com/shubham-mehta/waste-prediction",
+      githubLink: "https://github.com/mshubham707/Waste-Management-Prediction",
       status: "Open Source"
     }
   ];

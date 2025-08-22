@@ -16,18 +16,18 @@ const Skills = () => {
       title: "Programming Languages",
       icon: Code,
       skills: [
-        { name: "Python", level: "Advanced", description: "Pandas, NumPy, Scikit-Learn" },
-        { name: "SQL", level: "Advanced", description: "Joins, CTEs, Window Functions" },
-        { name: "R", level: "Intermediate", description: "Statistical Analysis, ggplot2" }
+        { name: "Python", level: "Advanced", description: "Pandas, NumPy, Matplotlib, Plotly, Seaborn, Scikit-Learn" },
+        { name: "SQL", level: "Advanced", description: "Joins, CTEs, Window Functions, Advanced Queries" },
+        { name: "JavaScript", level: "Intermediate", description: "ES6+, Flask Integration, Frontend Development" }
       ]
     },
     {
       title: "Machine Learning",
       icon: Brain,
       skills: [
-        { name: "XGBoost", level: "Advanced", description: "Gradient Boosting, Hyperparameter Tuning" },
-        { name: "K-Means", level: "Intermediate", description: "Clustering, Customer Segmentation" },
-        { name: "Linear Regression", level: "Advanced", description: "Predictive Modeling, Feature Engineering" }
+        { name: "Supervised Learning", level: "Advanced", description: "Lasso, Ridge, SVM, Naive Bayes, XGBoost" },
+        { name: "Unsupervised Learning", level: "Intermediate", description: "K-Means, PCA, KNN, DBSCAN Clustering" },
+        { name: "Model Optimization", level: "Advanced", description: "Feature Engineering, Hyperparameter Tuning, Cross-validation" }
       ]
     },
     {
@@ -43,9 +43,9 @@ const Skills = () => {
       title: "Data Engineering",
       icon: Database,
       skills: [
-        { name: "ETL Processes", level: "Intermediate", description: "Data Pipeline, Automation" },
-        { name: "Data Warehousing", level: "Intermediate", description: "Schema Design, Optimization" },
-        { name: "APIs", level: "Intermediate", description: "REST APIs, Data Integration" }
+        { name: "ETL Processes", level: "Learning", description: "Data Pipeline, Automation" },
+        { name: "Data Warehousing", level: "Learning", description: "Schema Design, Optimization" },
+        { name: "Cloud Platforms (AWS)", level: "Learning", description: "S3, EC2, Data Storage Solutions" }
       ]
     }
   ];
@@ -58,6 +58,8 @@ const Skills = () => {
         return 'bg-blue-100 text-blue-800 border-blue-200';
       case 'Intermediate':
         return 'bg-yellow-100 text-yellow-800 border-yellow-200';
+      case 'Learning':
+        return 'bg-orange-100 text-orange-800 border-orange-200';
       default:
         return 'bg-gray-100 text-gray-800 border-gray-200';
     }
