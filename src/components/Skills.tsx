@@ -18,7 +18,7 @@ const Skills = () => {
       skills: [
         { name: "Python", level: "Advanced", description: "Pandas, NumPy, Matplotlib, Plotly, Seaborn, Scikit-Learn" },
         { name: "SQL", level: "Advanced", description: "Joins, CTEs, Window Functions, Advanced Queries" },
-        { name: "JavaScript", level: "Intermediate", description: "ES6+, Flask Integration, Frontend Development" }
+        { name: "Web Frameworks & Cloud Integration", level: "Intermediate", description: "Flask, RESTful APIs, Docker, Postman, GitHub Actions" }
       ]
     },
     {
