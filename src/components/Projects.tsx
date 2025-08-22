@@ -17,7 +17,7 @@ const Projects = () => {
         "Predictive demand modeling"
       ],
       demoLink: "https://airline-kpi-dashboard.onrender.com/",
-      githubLink: "https://github.com/mshubham707/Airline-KPI-Dashboard",
+      githubLink: "https://github.com/mshubham707/Airline-Dashboard-Flask",
       status: "Live Demo"
     },
     {
