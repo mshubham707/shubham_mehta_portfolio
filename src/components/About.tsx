@@ -20,7 +20,7 @@ const About = () => {
               I'm <span className="font-semibold text-heading">Shubham Mehta</span>, 
               a results-driven data analytics professional with 3 years of experience in the aviation industry. 
               As a Senior Revenue Analyst at IndiGo, I leverage data to drive strategic decisions, optimize revenue, 
-              and solve complex business problems across key markets like Dubai, Thailand, and South East Asia.
+              and solve complex business problems across key international markets.
             </p>
             
             <p className="text-lg text-body leading-relaxed">
