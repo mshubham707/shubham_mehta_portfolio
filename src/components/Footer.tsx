@@ -5,12 +5,12 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
-import emailjs from '@emailjs/browser';
-import { 
-  Mail, 
-  Linkedin, 
-  Github, 
-  Send, 
+
+import {
+  Mail,
+  Linkedin,
+  Github,
+  Send,
   Heart,
   Trophy,
   Dumbbell,
@@ -24,13 +24,11 @@ const Footer = () => {
     message: ''
   });
   const { toast } = useToast();
-
   const interests = [
     { name: "Cricket", icon: Trophy, description: "Passionate fan and weekend player" },
     { name: "Gym", icon: Dumbbell, description: "Fitness enthusiast and strength training" },
     { name: "Podcasts", icon: Headphones, description: "Tech, business, and economics content" }
   ];
-
   const socialLinks = [
     {
       name: "LinkedIn",
@@ -51,37 +49,39 @@ const Footer = () => {
       color: "hover:text-red-600"
     }
   ];
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
   };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     try {
-      const result = await emailjs.send(
-        'service_k8j2l4p', // EmailJS service ID
-        'template_portfolio', // EmailJS template ID
-        {
-          from_name: formData.name,
-          from_email: formData.email,
+      const result = await fetch("https://qternzuufanuxcfbypsu.supabase.co/functions/v1/send-contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
           message: formData.message,
-          to_email: 'mshubham707@gmail.com',
-        },
-        'dQvR8vNu2FwqtPxAX' // EmailJS public key
-      );
-      
-      toast({
-        title: "Message Sent Successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+        }),
       });
-      setFormData({ name: '', email: '', message: '' });
+
+      const response = await result.json();
+
+      if (response.success) {
+        toast({
+          title: "Message Sent Successfully!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        setFormData({ name: '', email: '', message: '' }); // Reset all fields
+      } else {
+        throw new Error("Failed to send message");
+      }
     } catch (error) {
-      console.error('EmailJS Error:', error);
+      console.error('Supabase Function Error:', error);
       toast({
         title: "Failed to send message",
         description: "Please try again later or contact me directly at mshubham707@gmail.com",
@@ -89,7 +89,6 @@ const Footer = () => {
       });
     }
   };
-
   return (
     <footer id="contact" className="py-20 px-4 bg-secondary">
       <div className="max-w-6xl mx-auto">
@@ -100,11 +99,10 @@ const Footer = () => {
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
           <p className="text-lg text-body mt-4 max-w-2xl mx-auto">
-            Interested in collaborating or discussing data analytics opportunities? 
+            Interested in collaborating or discussing data analytics opportunities?
             I'd love to hear from you.
           </p>
         </div>
-
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <Card className="shadow-elegant">
@@ -152,7 +150,6 @@ const Footer = () => {
               </form>
             </CardContent>
           </Card>
-
           {/* Personal Info & Interests */}
           <div className="space-y-8">
             {/* Interests */}
@@ -176,7 +173,6 @@ const Footer = () => {
                 </div>
               </CardContent>
             </Card>
-
             {/* Social Links */}
             <Card className="shadow-elegant">
               <CardContent className="p-8">
@@ -203,7 +199,6 @@ const Footer = () => {
             </Card>
           </div>
         </div>
-
         {/* Footer Bottom */}
         <div className="mt-16 pt-8 border-t border-border text-center">
           <p className="text-body flex items-center justify-center">
@@ -219,5 +214,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;
