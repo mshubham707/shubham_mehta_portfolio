@@ -60,18 +60,33 @@ const Footer = () => {
     e.preventDefault();
 
     try {
-      const { data, error } = await supabase
-        .from('contact_submissions')
-        .insert([
-          {
+      // Store in database and send email
+      const [dbResult, emailResult] = await Promise.all([
+        supabase
+          .from('contact_submissions')
+          .insert([
+            {
+              name: formData.name,
+              email: formData.email,
+              message: formData.message,
+            }
+          ]),
+        supabase.functions.invoke('send-contact', {
+          body: {
             name: formData.name,
             email: formData.email,
             message: formData.message,
           }
-        ]);
+        })
+      ]);
 
-      if (error) {
-        throw error;
+      if (dbResult.error) {
+        throw dbResult.error;
+      }
+
+      if (emailResult.error) {
+        console.error('Email sending failed:', emailResult.error);
+        // Still show success message since data was saved
       }
 
       toast({
@@ -80,7 +95,7 @@ const Footer = () => {
       });
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
-      console.error('Supabase Error:', error);
+      console.error('Contact form error:', error);
       toast({
         title: "Failed to send message",
         description: "Please try again later or contact me directly at mshubham707@gmail.com",
