@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 import {
   Mail,
@@ -59,29 +60,27 @@ const Footer = () => {
     e.preventDefault();
 
     try {
-      const result = await fetch("https://qternzuufanuxcfbypsu.supabase.co/functions/v1/send-contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-        }),
-      });
+      const { data, error } = await supabase
+        .from('contact_submissions')
+        .insert([
+          {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+          }
+        ]);
 
-      const response = await result.json();
-
-      if (response.success) {
-        toast({
-          title: "Message Sent Successfully!",
-          description: "Thank you for reaching out. I'll get back to you soon.",
-        });
-        setFormData({ name: '', email: '', message: '' }); // Reset all fields
-      } else {
-        throw new Error("Failed to send message");
+      if (error) {
+        throw error;
       }
+
+      toast({
+        title: "Message Sent Successfully!",
+        description: "Thank you for reaching out. I'll get back to you soon.",
+      });
+      setFormData({ name: '', email: '', message: '' });
     } catch (error) {
-      console.error('Supabase Function Error:', error);
+      console.error('Supabase Error:', error);
       toast({
         title: "Failed to send message",
         description: "Please try again later or contact me directly at mshubham707@gmail.com",
