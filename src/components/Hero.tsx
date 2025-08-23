@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Download, Mail } from "lucide-react";
-import profileImage from "@/assets/shubham-profile-new.jpg";
+const profileImageUrl = "/lovable-uploads/a0650eff-04ef-4180-826d-f95213da3d31.png";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="mb-8 opacity-0 animate-fade-in-up">
           <div className="relative inline-block">
             <img
-              src={profileImage}
+              src={profileImageUrl}
               alt="Shubham Mehta"
               className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-elegant border-4 border-primary-light mx-auto"
             />
