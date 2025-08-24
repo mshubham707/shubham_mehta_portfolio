@@ -82,25 +82,21 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Side - Stats or Visual Element */}
+          {/* Right Side - Work Highlights */}
           <div className="hidden lg:block opacity-0 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="grid grid-cols-2 gap-6 text-center">
-                <div>
-                  <div className="text-3xl font-bold text-heading mb-2">3+</div>
-                  <div className="text-sm text-light">Years Experience</div>
+              <div className="space-y-6">
+                <div className="border-l-4 border-primary pl-4">
+                  <h3 className="font-semibold text-heading mb-2">Revenue Optimization</h3>
+                  <p className="text-sm text-light">Increased airline revenue by 15% through advanced analytics and pricing strategies</p>
                 </div>
-                <div>
-                  <div className="text-3xl font-bold text-heading mb-2">50+</div>
-                  <div className="text-sm text-light">Projects Completed</div>
+                <div className="border-l-4 border-primary pl-4">
+                  <h3 className="font-semibold text-heading mb-2">Operational Excellence</h3>
+                  <p className="text-sm text-light">Reduced operational costs by $2M annually through data-driven process improvements</p>
                 </div>
-                <div>
-                  <div className="text-3xl font-bold text-heading mb-2">100%</div>
-                  <div className="text-sm text-light">Client Satisfaction</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-heading mb-2">24/7</div>
-                  <div className="text-sm text-light">Data Analysis</div>
+                <div className="border-l-4 border-primary pl-4">
+                  <h3 className="font-semibold text-heading mb-2">Predictive Modeling</h3>
+                  <p className="text-sm text-light">Built forecasting models achieving 95% accuracy for demand prediction</p>
                 </div>
               </div>
             </div>

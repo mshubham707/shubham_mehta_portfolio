@@ -59,11 +59,15 @@ const HeroVariant2 = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-l from-transparent via-primary/10 to-primary/30"></div>
         
-        {/* Floating badge */}
-        <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
-          <div className="text-center">
-            <div className="text-2xl font-bold text-primary mb-1">3+</div>
-            <div className="text-xs text-gray-600">Years Experience</div>
+        {/* Floating highlights */}
+        <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg max-w-sm">
+          <div className="text-sm">
+            <div className="font-semibold text-primary mb-2">Key Achievements</div>
+            <div className="space-y-1 text-xs text-gray-600">
+              <div>• 15% Revenue Increase</div>
+              <div>• $2M Cost Reduction</div>
+              <div>• 95% Model Accuracy</div>
+            </div>
           </div>
         </div>
       </div>
