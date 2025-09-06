@@ -47,7 +47,8 @@ const Projects = () => {
         "Feature importance analysis"
       ],
       githubLink: "https://github.com/mshubham707/disease_prediction",
-      status: "Open Source"
+      demoLink: "https://huggingface.co/spaces/shubzz13/disease-prediction",
+      status: "Live Demo Available"
     }
   ];
 
