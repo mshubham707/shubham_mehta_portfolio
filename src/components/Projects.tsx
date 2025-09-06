@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, BarChart3, Recycle } from "lucide-react";
+import { ExternalLink, Github, BarChart3, Recycle, Activity } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -32,6 +32,21 @@ const Projects = () => {
         "Environmental impact assessment"
       ],
       githubLink: "https://github.com/mshubham707/Waste-Management-Prediction",
+      status: "Open Source"
+    },
+    {
+      title: "Multiple Disease Prediction System",
+      description: "Machine learning-powered diagnostic tool that predicts multiple diseases based on symptoms and clinical parameters. Features advanced ensemble methods and real-time prediction capabilities through a Flask web interface.",
+      icon: Activity,
+      technologies: ["Python", "XGBoost", "Scikit-Learn", "Flask", "Pandas", "NumPy", "Joblib"],
+      features: [
+        "Multi-disease classification",
+        "Symptom-based prediction",
+        "Real-time web interface",
+        "Statistical model validation",
+        "Feature importance analysis"
+      ],
+      githubLink: "https://github.com/mshubham707/disease_prediction",
       status: "Open Source"
     }
   ];

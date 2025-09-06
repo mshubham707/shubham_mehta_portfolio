@@ -82,21 +82,21 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Side - Work Highlights */}
+          {/* Right Side - Philosophy & Skills */}
           <div className="hidden lg:block opacity-0 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <div className="space-y-6">
                 <div className="border-l-4 border-primary pl-4">
-                  <h3 className="font-semibold text-heading mb-2">Revenue Optimization</h3>
-                  <p className="text-sm text-light">Increased airline revenue by 15% through advanced analytics and pricing strategies</p>
+                  <h3 className="font-semibold text-heading mb-2">Data-Driven Philosophy</h3>
+                  <p className="text-sm text-light">"Every decision should be backed by data, every problem can be solved with the right algorithm"</p>
                 </div>
                 <div className="border-l-4 border-primary pl-4">
-                  <h3 className="font-semibold text-heading mb-2">Operational Excellence</h3>
-                  <p className="text-sm text-light">Reduced operational costs by $2M annually through data-driven process improvements</p>
+                  <h3 className="font-semibold text-heading mb-2">Core Expertise</h3>
+                  <p className="text-sm text-light">Machine Learning • Predictive Analytics • Business Intelligence • Process Optimization</p>
                 </div>
                 <div className="border-l-4 border-primary pl-4">
-                  <h3 className="font-semibold text-heading mb-2">Predictive Modeling</h3>
-                  <p className="text-sm text-light">Built forecasting models achieving 95% accuracy for demand prediction</p>
+                  <h3 className="font-semibold text-heading mb-2">Innovation Mindset</h3>
+                  <p className="text-sm text-light">Transforming complex business challenges into elegant, scalable solutions</p>
                 </div>
               </div>
             </div>
