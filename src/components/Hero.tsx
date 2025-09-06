@@ -82,21 +82,74 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Side - Philosophy & Skills */}
+          {/* Right Side - Enhanced Profile Showcase */}
           <div className="hidden lg:block opacity-0 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="space-y-6">
-                <div className="border-l-4 border-primary pl-4">
-                  <h3 className="font-semibold text-heading mb-2">Data-Driven Philosophy</h3>
-                  <p className="text-sm text-light">"Every decision should be backed by data, every problem can be solved with the right algorithm"</p>
+            <div className="space-y-4">
+              {/* Philosophy Card */}
+              <div className="bg-gradient-to-br from-primary/20 to-primary/10 backdrop-blur-sm rounded-2xl p-6 border border-primary/30 shadow-elegant">
+                <div className="flex items-center mb-3">
+                  <div className="w-3 h-3 bg-primary rounded-full mr-3"></div>
+                  <h3 className="font-bold text-heading text-lg">Philosophy</h3>
                 </div>
-                <div className="border-l-4 border-primary pl-4">
-                  <h3 className="font-semibold text-heading mb-2">Core Expertise</h3>
-                  <p className="text-sm text-light">Machine Learning • Predictive Analytics • Business Intelligence • Process Optimization</p>
+                <p className="text-sm text-light italic leading-relaxed">
+                  "Every decision should be backed by data, every problem can be solved with the right algorithm"
+                </p>
+              </div>
+
+              {/* Skills Card */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-elegant">
+                <div className="flex items-center mb-4">
+                  <div className="w-3 h-3 bg-accent rounded-full mr-3"></div>
+                  <h3 className="font-bold text-heading text-lg">Core Skills</h3>
                 </div>
-                <div className="border-l-4 border-primary pl-4">
-                  <h3 className="font-semibold text-heading mb-2">Innovation Mindset</h3>
-                  <p className="text-sm text-light">Transforming complex business challenges into elegant, scalable solutions</p>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-primary/20 rounded-lg p-3">
+                    <div className="text-xs font-semibold text-primary mb-1">ML & AI</div>
+                    <div className="text-xs text-light">Python, XGBoost, Scikit-Learn</div>
+                  </div>
+                  <div className="bg-accent/20 rounded-lg p-3">
+                    <div className="text-xs font-semibold text-accent mb-1">Analytics</div>
+                    <div className="text-xs text-light">Pandas, NumPy, Statistical Modeling</div>
+                  </div>
+                  <div className="bg-primary/20 rounded-lg p-3">
+                    <div className="text-xs font-semibold text-primary mb-1">Visualization</div>
+                    <div className="text-xs text-light">Power BI, Tableau, Plotly</div>
+                  </div>
+                  <div className="bg-accent/20 rounded-lg p-3">
+                    <div className="text-xs font-semibold text-accent mb-1">Web Dev</div>
+                    <div className="text-xs text-light">Flask, React, JavaScript</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Key Work Highlights */}
+              <div className="bg-gradient-to-br from-accent/20 to-accent/10 backdrop-blur-sm rounded-2xl p-6 border border-accent/30 shadow-elegant">
+                <div className="flex items-center mb-4">
+                  <div className="w-3 h-3 bg-accent rounded-full mr-3"></div>
+                  <h3 className="font-bold text-heading text-lg">Key Projects</h3>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
+                    <div>
+                      <div className="text-sm font-medium text-heading">Disease Prediction System</div>
+                      <div className="text-xs text-light">ML-powered diagnostic tool with ensemble methods</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
+                    <div>
+                      <div className="text-sm font-medium text-heading">Waste Management Analytics</div>
+                      <div className="text-xs text-light">Predictive modeling for environmental impact</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
+                    <div>
+                      <div className="text-sm font-medium text-heading">Aviation Revenue Optimization</div>
+                      <div className="text-xs text-light">Advanced analytics driving operational efficiency</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

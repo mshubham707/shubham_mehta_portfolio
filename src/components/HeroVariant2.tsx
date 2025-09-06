@@ -59,14 +59,60 @@ const HeroVariant2 = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-l from-transparent via-primary/10 to-primary/30"></div>
         
-        {/* Floating philosophy */}
-        <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg max-w-sm">
-          <div className="text-sm">
-            <div className="font-semibold text-primary mb-2">My Approach</div>
-            <div className="space-y-1 text-xs text-gray-600">
-              <div>• Data-Driven Decision Making</div>
-              <div>• Innovative Problem Solving</div>
-              <div>• Scalable Solution Design</div>
+        {/* Enhanced Floating Cards */}
+        <div className="absolute top-6 right-6 space-y-4 max-w-xs">
+          {/* Philosophy Card */}
+          <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-elegant border border-primary/20">
+            <div className="flex items-center mb-3">
+              <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
+              <div className="font-bold text-primary text-sm">Philosophy</div>
+            </div>
+            <p className="text-xs text-gray-700 italic leading-relaxed">
+              "Transform data into strategic decisions that drive meaningful impact"
+            </p>
+          </div>
+
+          {/* Skills Snapshot */}
+          <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-elegant border border-accent/20">
+            <div className="flex items-center mb-3">
+              <div className="w-2 h-2 bg-accent rounded-full mr-2"></div>
+              <div className="font-bold text-accent text-sm">Expertise</div>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="bg-primary/10 rounded-lg p-2">
+                <div className="text-xs font-medium text-primary">ML & AI</div>
+              </div>
+              <div className="bg-accent/10 rounded-lg p-2">
+                <div className="text-xs font-medium text-accent">Analytics</div>
+              </div>
+              <div className="bg-primary/10 rounded-lg p-2">
+                <div className="text-xs font-medium text-primary">Visualization</div>
+              </div>
+              <div className="bg-accent/10 rounded-lg p-2">
+                <div className="text-xs font-medium text-accent">Web Dev</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Impact Highlights */}
+          <div className="bg-gradient-to-br from-primary/10 to-accent/10 backdrop-blur-sm rounded-2xl p-4 shadow-elegant border border-primary/20">
+            <div className="flex items-center mb-3">
+              <div className="w-2 h-2 bg-gradient-to-r from-primary to-accent rounded-full mr-2"></div>
+              <div className="font-bold text-gray-800 text-sm">Key Impact</div>
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center text-xs">
+                <div className="w-1 h-1 bg-primary rounded-full mr-2"></div>
+                <span className="text-gray-700">Disease Prediction System</span>
+              </div>
+              <div className="flex items-center text-xs">
+                <div className="w-1 h-1 bg-primary rounded-full mr-2"></div>
+                <span className="text-gray-700">Waste Management Analytics</span>
+              </div>
+              <div className="flex items-center text-xs">
+                <div className="w-1 h-1 bg-primary rounded-full mr-2"></div>
+                <span className="text-gray-700">Aviation Industry Solutions</span>
+              </div>
             </div>
           </div>
         </div>
