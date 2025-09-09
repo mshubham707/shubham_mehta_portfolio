@@ -85,69 +85,68 @@ const Hero = () => {
           {/* Right Side - Enhanced Profile Showcase */}
           <div className="hidden lg:block opacity-0 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
             <div className="space-y-4">
-              {/* Philosophy Card */}
+              {/* Data Philosophy Card */}
               <div className="bg-gradient-to-br from-primary/20 to-primary/10 backdrop-blur-sm rounded-2xl p-6 border border-primary/30 shadow-elegant">
                 <div className="flex items-center mb-3">
                   <div className="w-3 h-3 bg-primary rounded-full mr-3"></div>
-                  <h3 className="font-bold text-heading text-lg">Philosophy</h3>
+                  <h3 className="font-bold text-heading text-lg">Data Philosophy</h3>
                 </div>
-                <p className="text-sm text-light italic leading-relaxed">
-                  "Every decision should be backed by data, every problem can be solved with the right algorithm"
+                <p className="text-sm text-light italic leading-relaxed mb-3">
+                  "Transform complex datasets into strategic business intelligence that drives measurable outcomes"
                 </p>
+                <div className="text-xs text-light/80">
+                  Believer in evidence-based decision making and the power of predictive analytics
+                </div>
               </div>
 
-              {/* Skills Card */}
+              {/* Technical Expertise Card */}
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-elegant">
                 <div className="flex items-center mb-4">
                   <div className="w-3 h-3 bg-accent rounded-full mr-3"></div>
-                  <h3 className="font-bold text-heading text-lg">Core Skills</h3>
+                  <h3 className="font-bold text-heading text-lg">Data Expertise</h3>
                 </div>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="space-y-3">
                   <div className="bg-primary/20 rounded-lg p-3">
-                    <div className="text-xs font-semibold text-primary mb-1">ML & AI</div>
-                    <div className="text-xs text-light">Python, XGBoost, Scikit-Learn</div>
+                    <div className="text-xs font-semibold text-primary mb-1">Machine Learning</div>
+                    <div className="text-xs text-light">XGBoost, Random Forest, Neural Networks, Ensemble Methods</div>
                   </div>
                   <div className="bg-accent/20 rounded-lg p-3">
-                    <div className="text-xs font-semibold text-accent mb-1">Analytics</div>
-                    <div className="text-xs text-light">Pandas, NumPy, Statistical Modeling</div>
+                    <div className="text-xs font-semibold text-accent mb-1">Data Engineering</div>
+                    <div className="text-xs text-light">Python, Pandas, NumPy, SQL, ETL Pipelines</div>
                   </div>
                   <div className="bg-primary/20 rounded-lg p-3">
-                    <div className="text-xs font-semibold text-primary mb-1">Visualization</div>
-                    <div className="text-xs text-light">Power BI, Tableau, Plotly</div>
-                  </div>
-                  <div className="bg-accent/20 rounded-lg p-3">
-                    <div className="text-xs font-semibold text-accent mb-1">Web Dev</div>
-                    <div className="text-xs text-light">Flask, React, JavaScript</div>
+                    <div className="text-xs font-semibold text-primary mb-1">Analytics & BI</div>
+                    <div className="text-xs text-light">Power BI, Tableau, Statistical Analysis, KPI Design</div>
                   </div>
                 </div>
               </div>
 
-              {/* Key Work Highlights */}
+              {/* Key Achievements Card */}
               <div className="bg-gradient-to-br from-accent/20 to-accent/10 backdrop-blur-sm rounded-2xl p-6 border border-accent/30 shadow-elegant">
                 <div className="flex items-center mb-4">
                   <div className="w-3 h-3 bg-accent rounded-full mr-3"></div>
-                  <h3 className="font-bold text-heading text-lg">Key Projects</h3>
+                  <h3 className="font-bold text-heading text-lg">Data Impact</h3>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
                     <div>
-                      <div className="text-sm font-medium text-heading">Disease Prediction System</div>
-                      <div className="text-xs text-light">ML-powered diagnostic tool with ensemble methods</div>
+                      <div className="text-sm font-medium text-heading">94% Accuracy Disease Prediction</div>
+                      <div className="text-xs text-light">Ensemble ML model for multiple disease classification</div>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
                     <div>
-                      <div className="text-sm font-medium text-heading">Waste Management Analytics</div>
-                      <div className="text-xs text-light">Predictive modeling for environmental impact</div>
+                      <div className="text-sm font-medium text-heading">Revenue Analytics at Scale</div>
+                      <div className="text-xs text-light">3+ years optimizing aviation industry operations</div>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
                     <div>
-                      <div className="text-sm font-medium text-heading">Aviation Revenue Optimization</div>
-                      <div className="text-xs text-light">Advanced analytics driving operational efficiency</div>
+                      <div className="text-sm font-medium text-heading">End-to-End Data Solutions</div>
+                      <div className="text-xs text-light">From data collection to deployment & monitoring</div>
                     </div>
                   </div>
                 </div>
