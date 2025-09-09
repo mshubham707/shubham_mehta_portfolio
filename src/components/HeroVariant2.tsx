@@ -59,71 +59,94 @@ const HeroVariant2 = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-l from-transparent via-primary/10 to-primary/30"></div>
         
-        {/* Enhanced Floating Cards */}
-        <div className="absolute top-6 right-6 space-y-4 max-w-xs">
-          {/* Data Philosophy Card */}
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-elegant border border-primary/20">
-            <div className="flex items-center mb-3">
-              <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
-              <div className="font-bold text-primary text-sm">Data Philosophy</div>
-            </div>
-            <p className="text-xs text-gray-700 italic leading-relaxed mb-2">
-              "Every dataset tells a story - my job is to extract actionable insights that drive business growth"
-            </p>
-            <div className="text-xs text-gray-600">
-              Evidence-based • Strategic • Impactful
+        {/* Creative Floating Highlights */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Achievement Badge - Top Right */}
+          <div className="absolute top-8 right-8 pointer-events-auto">
+            <div className="bg-gradient-to-br from-primary via-primary to-primary/80 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center shadow-elegant animate-pulse hover-scale">
+              <div className="text-sm font-bold">94%</div>
+              <div className="text-xs">Accuracy</div>
             </div>
           </div>
 
-          {/* Advanced Skills Card */}
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-elegant border border-accent/20">
-            <div className="flex items-center mb-3">
-              <div className="w-2 h-2 bg-accent rounded-full mr-2"></div>
-              <div className="font-bold text-accent text-sm">Data Science Stack</div>
-            </div>
-            <div className="space-y-2">
-              <div className="bg-primary/15 rounded-lg p-2">
-                <div className="text-xs font-medium text-primary mb-1">ML Engineering</div>
-                <div className="text-xs text-gray-600">XGBoost • Neural Networks • Ensemble Methods</div>
-              </div>
-              <div className="bg-accent/15 rounded-lg p-2">
-                <div className="text-xs font-medium text-accent mb-1">Data Pipeline</div>
-                <div className="text-xs text-gray-600">Python • Pandas • SQL • ETL</div>
-              </div>
-              <div className="bg-primary/15 rounded-lg p-2">
-                <div className="text-xs font-medium text-primary mb-1">Business Intelligence</div>
-                <div className="text-xs text-gray-600">Power BI • Tableau • KPI Design</div>
+          {/* Experience Pill - Top Left */}
+          <div className="absolute top-6 left-6 pointer-events-auto">
+            <div className="bg-gradient-to-r from-accent to-accent/80 text-white rounded-full px-3 py-2 shadow-elegant hover-scale">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                <span className="text-xs font-semibold">3+ Years</span>
               </div>
             </div>
           </div>
 
-          {/* Achievements Highlights */}
-          <div className="bg-gradient-to-br from-primary/10 to-accent/10 backdrop-blur-sm rounded-2xl p-4 shadow-elegant border border-primary/20">
-            <div className="flex items-center mb-3">
-              <div className="w-2 h-2 bg-gradient-to-r from-primary to-accent rounded-full mr-2"></div>
-              <div className="font-bold text-gray-800 text-sm">Key Achievements</div>
+          {/* Industry Tag - Left Side */}
+          <div className="absolute top-1/4 left-4 pointer-events-auto">
+            <div className="bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-elegant border border-primary/20 hover-scale">
+              <div className="flex items-center space-x-2">
+                <span className="text-primary font-bold text-lg">✈</span>
+                <span className="text-sm font-semibold text-gray-800">Aviation</span>
+              </div>
             </div>
-            <div className="space-y-2">
-              <div className="flex items-start text-xs">
-                <div className="w-1 h-1 bg-primary rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+          </div>
+
+          {/* Main Skills Card - Right Side */}
+          <div className="absolute top-1/3 right-4 max-w-xs pointer-events-auto">
+            <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-4 shadow-elegant border border-primary/30">
+              <div className="flex items-center mb-3">
+                <div className="w-6 h-6 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center mr-2">
+                  <span className="text-white font-bold text-xs">⚡</span>
+                </div>
+                <h3 className="font-bold text-gray-800 text-sm">Data Expertise</h3>
+              </div>
+              
+              {/* Skill Pills */}
+              <div className="flex flex-wrap gap-2 mb-3">
+                <span className="bg-primary/20 text-primary px-2 py-1 rounded-full text-xs font-medium">ML</span>
+                <span className="bg-accent/20 text-accent px-2 py-1 rounded-full text-xs font-medium">Python</span>
+                <span className="bg-primary/20 text-primary px-2 py-1 rounded-full text-xs font-medium">BI</span>
+                <span className="bg-accent/20 text-accent px-2 py-1 rounded-full text-xs font-medium">Analytics</span>
+              </div>
+              
+              {/* Philosophy */}
+              <div className="p-2 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg border-l-2 border-primary">
+                <p className="text-xs italic text-gray-700 leading-relaxed">
+                  "Transform data into strategic decisions"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Impact Metrics - Bottom Right */}
+          <div className="absolute bottom-20 right-6 pointer-events-auto">
+            <div className="bg-gradient-to-br from-accent/90 to-primary/90 text-white rounded-2xl p-4 shadow-elegant hover-scale">
+              <div className="flex items-center mb-2">
+                <span className="text-lg mr-2">🎯</span>
+                <span className="text-sm font-semibold">Impact</span>
+              </div>
+              <div className="grid grid-cols-2 gap-2 text-center">
                 <div>
-                  <span className="text-gray-800 font-medium">94% ML Accuracy</span>
-                  <div className="text-gray-600">Disease prediction model</div>
+                  <div className="text-lg font-bold">15+</div>
+                  <div className="text-xs opacity-80">Models</div>
+                </div>
+                <div>
+                  <div className="text-lg font-bold">500K+</div>
+                  <div className="text-xs opacity-80">Records</div>
                 </div>
               </div>
-              <div className="flex items-start text-xs">
-                <div className="w-1 h-1 bg-primary rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
-                <div>
-                  <span className="text-gray-800 font-medium">Aviation Analytics</span>
-                  <div className="text-gray-600">3+ years revenue optimization</div>
-                </div>
+            </div>
+          </div>
+
+          {/* Floating Tech Icons */}
+          <div className="absolute bottom-1/4 left-8 pointer-events-auto">
+            <div className="flex space-x-2">
+              <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center shadow-elegant hover-scale">
+                <span className="text-white font-bold text-sm">🐍</span>
               </div>
-              <div className="flex items-start text-xs">
-                <div className="w-1 h-1 bg-primary rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
-                <div>
-                  <span className="text-gray-800 font-medium">Full-Stack Data</span>
-                  <div className="text-gray-600">Collection to deployment</div>
-                </div>
+              <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center shadow-elegant hover-scale">
+                <span className="text-white font-bold text-sm">📊</span>
+              </div>
+              <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center shadow-elegant hover-scale">
+                <span className="text-white font-bold text-sm">🤖</span>
               </div>
             </div>
           </div>
