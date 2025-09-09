@@ -26,17 +26,55 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-left opacity-0 animate-fade-in-up">
-            {/* Large Profile Image */}
+            {/* Enhanced Profile Image with Creative Border */}
             <div className="mb-8">
               <div className="relative inline-block">
-                <img
-                  src={profileImageUrl}
-                  alt="Shubham Mehta"
-                  className="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover shadow-elegant border-4 border-primary/20 backdrop-blur-sm"
-                />
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 to-transparent"></div>
-                <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-lg">SM</span>
+                {/* Animated Background Rings */}
+                <div className="absolute inset-0 rounded-2xl">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl animate-pulse"></div>
+                  <div className="absolute -inset-2 bg-gradient-to-tr from-accent/20 to-primary/20 rounded-3xl animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                  <div className="absolute -inset-4 bg-gradient-to-bl from-primary/10 to-accent/10 rounded-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+                </div>
+                
+                {/* Main Image Container */}
+                <div className="relative z-10 p-2 bg-gradient-to-br from-white/20 to-white/10 rounded-2xl backdrop-blur-sm border border-white/30">
+                  <img
+                    src={profileImageUrl}
+                    alt="Shubham Mehta"
+                    className="w-48 h-48 md:w-56 md:h-56 rounded-xl object-cover shadow-elegant relative z-10"
+                  />
+                  
+                  {/* Overlay Gradient */}
+                  <div className="absolute inset-2 rounded-xl bg-gradient-to-t from-primary/20 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+
+                {/* Floating Professional Badge */}
+                <div className="absolute -bottom-2 -right-2 z-20">
+                  <div className="bg-gradient-to-r from-primary to-accent rounded-full p-3 shadow-elegant border-2 border-white">
+                    <div className="text-center">
+                      <div className="text-white font-bold text-xs">DATA</div>
+                      <div className="text-white font-bold text-xs">EXPERT</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Floating Skill Icons */}
+                <div className="absolute -top-4 -left-4 z-20">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-elegant border border-primary/20 hover-scale">
+                    <span className="text-primary font-bold text-lg">🐍</span>
+                  </div>
+                </div>
+                
+                <div className="absolute top-1/2 -right-6 z-20">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-elegant border border-accent/20 hover-scale">
+                    <span className="text-accent font-bold text-lg">📊</span>
+                  </div>
+                </div>
+                
+                <div className="absolute -bottom-4 left-8 z-20">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-elegant border border-primary/20 hover-scale">
+                    <span className="text-primary font-bold text-lg">🤖</span>
+                  </div>
                 </div>
               </div>
             </div>

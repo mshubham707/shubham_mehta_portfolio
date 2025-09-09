@@ -50,14 +50,39 @@ const HeroVariant2 = () => {
         </div>
       </div>
 
-      {/* Right Image */}
-      <div className="relative bg-gradient-to-bl from-primary/20 to-background">
-        <img
-          src={profileImageUrl}
-          alt="Shubham Mehta"
-          className="w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-primary/10 to-primary/30"></div>
+      {/* Right Image with Creative Frame */}
+      <div className="relative bg-gradient-to-bl from-primary/20 to-background overflow-hidden">
+        {/* Geometric Background Pattern */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-primary/10 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-accent/10 to-transparent rounded-full blur-3xl"></div>
+        </div>
+
+        {/* Main Image Container */}
+        <div className="relative h-full flex items-center justify-center p-8">
+          <div className="relative">
+            {/* Creative Border Frame */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-primary via-accent to-primary rounded-3xl opacity-75 blur-sm"></div>
+            <div className="absolute -inset-2 bg-gradient-to-br from-white/20 to-white/10 rounded-2xl backdrop-blur-sm border border-white/30"></div>
+            
+            {/* Profile Image */}
+            <img
+              src={profileImageUrl}
+              alt="Shubham Mehta"
+              className="relative z-10 w-80 h-80 lg:w-96 lg:h-96 rounded-xl object-cover shadow-elegant"
+            />
+            
+            {/* Overlay Effects */}
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-primary/30 via-transparent to-transparent z-20"></div>
+            
+            {/* Corner Accent */}
+            <div className="absolute -top-4 -right-4 z-30">
+              <div className="bg-gradient-to-br from-accent to-primary rounded-full w-12 h-12 flex items-center justify-center shadow-elegant">
+                <span className="text-white font-bold text-sm">🎯</span>
+              </div>
+            </div>
+          </div>
+        </div>
         
         {/* Creative Floating Highlights */}
         <div className="absolute inset-0 pointer-events-none">
