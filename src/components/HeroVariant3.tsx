@@ -17,29 +17,80 @@ const HeroVariant3 = () => {
       
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        {/* Huge Profile Image */}
+        {/* Creative Hexagonal Profile Image */}
         <div className="mb-12 opacity-0 animate-fade-in-up">
           <div className="relative inline-block">
-            <div className="w-80 h-80 md:w-96 md:h-96 rounded-full p-4 bg-gradient-to-br from-primary/20 via-transparent to-primary/20 backdrop-blur-sm border border-primary/20">
-              <img
-                src={profileImageUrl}
-                alt="Shubham Mehta"
-                className="w-full h-full rounded-full object-cover shadow-elegant"
-              />
-            </div>
+            {/* Outer Animated Ring */}
+            <div className="absolute -inset-8 rounded-full bg-gradient-to-r from-primary via-accent to-primary animate-spin" style={{ animationDuration: '8s' }}></div>
+            <div className="absolute -inset-6 rounded-full bg-background"></div>
             
-            {/* Floating info cards */}
-            <div className="absolute -left-8 top-1/4 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-bounce" style={{ animationDelay: '2s', animationDuration: '3s' }}>
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-primary" />
-                <span className="text-sm font-semibold">3+ Years</span>
+            {/* Middle Ring with Pulsing Effect */}
+            <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-primary/30 to-accent/30 animate-pulse"></div>
+            <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-white/20 to-white/10 backdrop-blur-sm border border-white/40"></div>
+            
+            {/* Main Image Container */}
+            <div className="relative w-80 h-80 md:w-96 md:h-96 p-6 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 rounded-full">
+              <div className="w-full h-full rounded-full overflow-hidden border-4 border-white/50 shadow-elegant">
+                <img
+                  src={profileImageUrl}
+                  alt="Shubham Mehta"
+                  className="w-full h-full object-cover"
+                />
+                {/* Inner Gradient Overlay */}
+                <div className="absolute inset-6 rounded-full bg-gradient-to-t from-primary/20 via-transparent to-transparent pointer-events-none"></div>
+              </div>
+              
+              {/* Central Professional Badge */}
+              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30">
+                <div className="bg-gradient-to-r from-primary to-accent rounded-full px-6 py-2 shadow-elegant border-2 border-white">
+                  <div className="text-center">
+                    <div className="text-white font-bold text-sm">DATA ANALYTICS</div>
+                    <div className="text-white/90 text-xs">PROFESSIONAL</div>
+                  </div>
+                </div>
               </div>
             </div>
             
-            <div className="absolute -right-8 top-1/3 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-bounce" style={{ animationDelay: '2.5s', animationDuration: '3s' }}>
-              <div className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-primary" />
-                <span className="text-sm font-semibold">Aviation</span>
+            {/* Floating Achievement Bubbles */}
+            <div className="absolute -top-4 -left-12 z-20">
+              <div className="bg-white/95 backdrop-blur-sm rounded-full p-4 shadow-elegant border border-primary/30 hover-scale animate-bounce" style={{ animationDelay: '0.5s', animationDuration: '3s' }}>
+                <div className="text-center">
+                  <div className="text-primary font-bold text-lg">94%</div>
+                  <div className="text-primary text-xs">Accuracy</div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="absolute top-8 -right-16 z-20">
+              <div className="bg-white/95 backdrop-blur-sm rounded-full p-4 shadow-elegant border border-accent/30 hover-scale animate-bounce" style={{ animationDelay: '1s', animationDuration: '3s' }}>
+                <div className="text-center">
+                  <div className="text-accent font-bold text-lg">3+</div>
+                  <div className="text-accent text-xs">Years</div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="absolute -bottom-8 -right-8 z-20">
+              <div className="bg-gradient-to-br from-primary/90 to-accent/90 text-white rounded-full p-4 shadow-elegant hover-scale animate-bounce" style={{ animationDelay: '1.5s', animationDuration: '3s' }}>
+                <div className="text-center">
+                  <div className="font-bold text-lg">✈️</div>
+                  <div className="text-xs">Aviation</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Floating Tech Icons */}
+            <div className="absolute top-1/3 -left-20 z-20">
+              <div className="flex flex-col space-y-3">
+                <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-elegant border border-primary/20 hover-scale">
+                  <span className="text-primary text-xl">🐍</span>
+                </div>
+                <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-elegant border border-accent/20 hover-scale">
+                  <span className="text-accent text-xl">📊</span>
+                </div>
+                <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-elegant border border-primary/20 hover-scale">
+                  <span className="text-primary text-xl">🤖</span>
+                </div>
               </div>
             </div>
           </div>
