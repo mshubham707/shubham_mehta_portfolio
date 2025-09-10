@@ -79,13 +79,18 @@ const HeroVariant3 = () => {
             
             {/* Additional Floating Elements */}
             <div className="absolute -bottom-12 -left-12 bg-gradient-to-br from-primary/90 to-accent/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white" style={{ animationDelay: '2s' }}>
-              <div className="text-xs font-bold mb-1">PYTHON</div>
+              <div className="text-xs font-bold mb-1">PYTHON & SQL</div>
               <div className="text-sm">Expert</div>
             </div>
             
             <div className="absolute -bottom-8 -right-14 bg-gradient-to-br from-accent/90 to-primary/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white" style={{ animationDelay: '2.5s' }}>
-              <div className="text-xs font-bold mb-1">POWER BI</div>
+              <div className="text-xs font-bold mb-1">POWER BI & TABLEAU</div>
               <div className="text-sm">Advanced</div>
+            </div>
+            
+            <div className="absolute -top-16 -right-8 bg-gradient-to-br from-primary/90 to-accent/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white" style={{ animationDelay: '3s' }}>
+              <div className="text-xs font-bold mb-1">MACHINE LEARNING</div>
+              <div className="text-sm">Enthusiast</div>
             </div>
           </div>
         </div>

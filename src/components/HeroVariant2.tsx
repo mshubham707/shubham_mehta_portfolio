@@ -98,18 +98,18 @@ const HeroVariant2 = () => {
               <div className="font-bold text-accent text-sm">Data Science Stack</div>
             </div>
             <div className="space-y-2">
-              <div className="bg-primary/15 rounded-lg p-2">
-                <div className="text-xs font-medium text-primary mb-1">ML Engineering</div>
-                <div className="text-xs text-gray-600">XGBoost • Neural Networks • Ensemble Methods</div>
-              </div>
-              <div className="bg-accent/15 rounded-lg p-2">
-                <div className="text-xs font-medium text-accent mb-1">Data Pipeline</div>
-                <div className="text-xs text-gray-600">Python • Pandas • SQL • ETL</div>
-              </div>
-              <div className="bg-primary/15 rounded-lg p-2">
-                <div className="text-xs font-medium text-primary mb-1">Business Intelligence</div>
-                <div className="text-xs text-gray-600">Power BI • Tableau • KPI Design</div>
-              </div>
+               <div className="bg-primary/15 rounded-lg p-2">
+                 <div className="text-xs font-medium text-primary mb-1">Python & SQL Expert</div>
+                 <div className="text-xs text-gray-600">Advanced Programming • Database Management • ETL</div>
+               </div>
+               <div className="bg-accent/15 rounded-lg p-2">
+                 <div className="text-xs font-medium text-accent mb-1">ML Enthusiast</div>
+                 <div className="text-xs text-gray-600">XGBoost • Neural Networks • Ensemble Methods</div>
+               </div>
+               <div className="bg-primary/15 rounded-lg p-2">
+                 <div className="text-xs font-medium text-primary mb-1">Power BI & Tableau</div>
+                 <div className="text-xs text-gray-600">Advanced Analytics • Dashboard Design • KPI Development</div>
+               </div>
             </div>
           </div>
 

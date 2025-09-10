@@ -61,10 +61,13 @@ const Hero = () => {
                 
                 {/* Floating Skill Indicators */}
                 <div className="absolute -top-8 right-4 bg-primary/90 text-white px-3 py-1 rounded-full text-xs font-semibold animate-float">
-                  Python
+                  Python & SQL Expert
                 </div>
                 <div className="absolute bottom-4 -left-8 bg-accent/90 text-white px-3 py-1 rounded-full text-xs font-semibold animate-float" style={{ animationDelay: '1s' }}>
-                  ML
+                  ML Enthusiast
+                </div>
+                <div className="absolute -top-2 -left-12 bg-gradient-to-r from-primary/90 to-accent/90 text-white px-3 py-1 rounded-full text-xs font-semibold animate-float" style={{ animationDelay: '2s' }}>
+                  Power BI & Tableau
                 </div>
               </div>
             </div>
