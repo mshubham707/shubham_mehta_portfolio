@@ -50,14 +50,30 @@ const HeroVariant2 = () => {
         </div>
       </div>
 
-      {/* Right Image */}
-      <div className="relative bg-gradient-to-bl from-primary/20 to-background">
+      {/* Enhanced Right Image with Dynamic Effects */}
+      <div className="relative bg-gradient-to-bl from-primary/20 to-background overflow-hidden">
+        {/* Animated Background Patterns */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_50%,rgba(var(--primary-rgb),0.1)_0%,transparent_50%)]"></div>
+          <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_80%_20%,rgba(var(--accent-rgb),0.15)_0%,transparent_50%)]"></div>
+          
+          {/* Floating Geometric Shapes */}
+          <div className="absolute top-1/4 left-1/4 w-8 h-8 border-2 border-primary/30 rotate-45 animate-spin" style={{ animationDuration: '10s' }}></div>
+          <div className="absolute top-3/4 left-1/3 w-6 h-6 bg-accent/20 rounded-full animate-bounce" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-1/2 left-1/5 w-4 h-4 border border-primary/40 animate-pulse"></div>
+        </div>
+        
+        {/* Main Image with Effects */}
         <img
           src={profileImageUrl}
           alt="Shubham Mehta"
-          className="w-full h-full object-cover object-center"
+          className="relative z-10 w-full h-full object-cover object-center"
         />
+        
+        {/* Dynamic Gradient Overlays */}
         <div className="absolute inset-0 bg-gradient-to-l from-transparent via-primary/10 to-primary/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-accent/20"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(var(--primary-rgb),0.05)_25%,rgba(var(--primary-rgb),0.05)_50%,transparent_50%,transparent_75%,rgba(var(--accent-rgb),0.05)_75%)] animate-pulse" style={{ animationDuration: '4s' }}></div>
         
         {/* Enhanced Floating Cards */}
         <div className="absolute top-6 right-6 space-y-4 max-w-xs">

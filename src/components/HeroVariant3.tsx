@@ -17,30 +17,75 @@ const HeroVariant3 = () => {
       
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        {/* Huge Profile Image */}
+        {/* Enhanced Central Profile Image with Dynamic Effects */}
         <div className="mb-12 opacity-0 animate-fade-in-up">
-          <div className="relative inline-block">
-            <div className="w-80 h-80 md:w-96 md:h-96 rounded-full p-4 bg-gradient-to-br from-primary/20 via-transparent to-primary/20 backdrop-blur-sm border border-primary/20">
-              <img
-                src={profileImageUrl}
-                alt="Shubham Mehta"
-                className="w-full h-full rounded-full object-cover shadow-elegant"
-              />
+          <div className="relative inline-block group">
+            {/* Pulsing Rings Animation */}
+            <div className="absolute inset-0 rounded-full">
+              <div className="absolute inset-[-20px] rounded-full border-2 border-primary/20 animate-ping" style={{ animationDuration: '3s' }}></div>
+              <div className="absolute inset-[-40px] rounded-full border border-accent/10 animate-ping" style={{ animationDuration: '4s', animationDelay: '1s' }}></div>
+              <div className="absolute inset-[-60px] rounded-full border border-primary/10 animate-ping" style={{ animationDuration: '5s', animationDelay: '2s' }}></div>
             </div>
             
-            {/* Floating info cards */}
-            <div className="absolute -left-8 top-1/4 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-bounce" style={{ animationDelay: '2s', animationDuration: '3s' }}>
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-primary" />
-                <span className="text-sm font-semibold">3+ Years</span>
+            {/* Rotating Tech Icons */}
+            <div className="absolute inset-0 animate-spin" style={{ animationDuration: '20s' }}>
+              <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              </div>
+              <div className="absolute top-1/2 -right-16 transform -translate-y-1/2 w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center">
+                <div className="w-2 h-2 bg-accent rounded-full"></div>
+              </div>
+              <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                <div className="w-4 h-4 bg-primary rounded-full"></div>
+              </div>
+              <div className="absolute top-1/2 -left-16 transform -translate-y-1/2 w-7 h-7 bg-accent/20 rounded-full flex items-center justify-center">
+                <div className="w-3 h-3 bg-accent rounded-full"></div>
               </div>
             </div>
             
-            <div className="absolute -right-8 top-1/3 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-bounce" style={{ animationDelay: '2.5s', animationDuration: '3s' }}>
-              <div className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-primary" />
-                <span className="text-sm font-semibold">Aviation</span>
+            {/* Main Image Container with Enhanced Styling */}
+            <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full p-6 bg-gradient-to-br from-primary/30 via-background/50 to-accent/20 backdrop-blur-sm border-2 border-primary/20 group-hover:border-accent/30 transition-all duration-700">
+              <div className="relative w-full h-full rounded-full overflow-hidden">
+                <img
+                  src={profileImageUrl}
+                  alt="Shubham Mehta"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20 group-hover:opacity-50 transition-opacity duration-500"></div>
               </div>
+              
+              {/* Inner Glow Effect */}
+              <div className="absolute inset-0 rounded-full shadow-[inset_0_0_50px_rgba(var(--primary-rgb),0.1)] group-hover:shadow-[inset_0_0_80px_rgba(var(--accent-rgb),0.2)] transition-all duration-500"></div>
+            </div>
+            
+            {/* Enhanced Floating Achievement Cards */}
+            <div className="absolute -left-16 top-1/4 bg-gradient-to-r from-primary/95 to-primary/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg animate-float text-white max-w-[140px]" style={{ animationDelay: '0s' }}>
+              <div className="flex items-center gap-2 mb-2">
+                <Calendar className="h-4 w-4" />
+                <span className="text-xs font-bold">EXPERIENCE</span>
+              </div>
+              <div className="text-lg font-bold">3+ Years</div>
+              <div className="text-xs opacity-90">Aviation Analytics</div>
+            </div>
+            
+            <div className="absolute -right-16 top-1/3 bg-gradient-to-r from-accent/95 to-accent/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg animate-float text-white max-w-[140px]" style={{ animationDelay: '1s' }}>
+              <div className="flex items-center gap-2 mb-2">
+                <MapPin className="h-4 w-4" />
+                <span className="text-xs font-bold">ACCURACY</span>
+              </div>
+              <div className="text-lg font-bold">94%</div>
+              <div className="text-xs opacity-90">ML Model Performance</div>
+            </div>
+            
+            {/* Additional Floating Elements */}
+            <div className="absolute -bottom-12 -left-12 bg-gradient-to-br from-primary/90 to-accent/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white" style={{ animationDelay: '2s' }}>
+              <div className="text-xs font-bold mb-1">PYTHON</div>
+              <div className="text-sm">Expert</div>
+            </div>
+            
+            <div className="absolute -bottom-8 -right-14 bg-gradient-to-br from-accent/90 to-primary/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white" style={{ animationDelay: '2.5s' }}>
+              <div className="text-xs font-bold mb-1">POWER BI</div>
+              <div className="text-sm">Advanced</div>
             </div>
           </div>
         </div>

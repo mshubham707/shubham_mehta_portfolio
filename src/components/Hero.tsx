@@ -26,17 +26,45 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-left opacity-0 animate-fade-in-up">
-            {/* Large Profile Image */}
+            {/* Enhanced Profile Image with Modern Effects */}
             <div className="mb-8">
-              <div className="relative inline-block">
+              <div className="relative inline-block group">
+                {/* Animated Background Rings */}
+                <div className="absolute inset-0 rounded-2xl">
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/30 to-accent/20 animate-pulse"></div>
+                  <div className="absolute inset-[-8px] rounded-2xl border-2 border-primary/20 animate-spin" style={{ animationDuration: '8s' }}></div>
+                  <div className="absolute inset-[-16px] rounded-2xl border border-accent/10 animate-spin" style={{ animationDuration: '12s', animationDirection: 'reverse' }}></div>
+                </div>
+                
+                {/* Floating Data Points */}
+                <div className="absolute -top-4 -left-4 w-3 h-3 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
+                <div className="absolute -top-2 -right-6 w-2 h-2 bg-accent rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+                <div className="absolute -bottom-6 -left-2 w-4 h-4 bg-primary/70 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
+                
+                {/* Main Image */}
                 <img
                   src={profileImageUrl}
                   alt="Shubham Mehta"
-                  className="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover shadow-elegant border-4 border-primary/20 backdrop-blur-sm"
+                  className="relative z-10 w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover shadow-elegant border-4 border-background/50 backdrop-blur-sm group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 to-transparent"></div>
-                <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-lg">SM</span>
+                
+                {/* Glow Effect */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/40 via-transparent to-accent/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Modern Badge with Tech Icons */}
+                <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-500">
+                  <div className="text-center">
+                    <div className="text-white font-bold text-xs">DATA</div>
+                    <div className="text-white/90 font-semibold text-lg">SM</div>
+                  </div>
+                </div>
+                
+                {/* Floating Skill Indicators */}
+                <div className="absolute -top-8 right-4 bg-primary/90 text-white px-3 py-1 rounded-full text-xs font-semibold animate-float">
+                  Python
+                </div>
+                <div className="absolute bottom-4 -left-8 bg-accent/90 text-white px-3 py-1 rounded-full text-xs font-semibold animate-float" style={{ animationDelay: '1s' }}>
+                  ML
                 </div>
               </div>
             </div>
