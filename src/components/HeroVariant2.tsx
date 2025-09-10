@@ -123,8 +123,8 @@ const HeroVariant2 = () => {
               <div className="flex items-start text-xs">
                 <div className="w-1 h-1 bg-primary rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
                 <div>
-                  <span className="text-gray-800 font-medium">94% ML Accuracy</span>
-                  <div className="text-gray-600">Disease prediction model</div>
+                  <span className="text-gray-800 font-medium">Advanced Analytics</span>
+                  <div className="text-gray-600">Power BI & Tableau Expert</div>
                 </div>
               </div>
               <div className="flex items-start text-xs">

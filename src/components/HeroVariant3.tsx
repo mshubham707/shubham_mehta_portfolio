@@ -71,10 +71,10 @@ const HeroVariant3 = () => {
             <div className="absolute -right-16 top-1/3 bg-gradient-to-r from-accent/95 to-accent/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg animate-float text-white max-w-[140px]" style={{ animationDelay: '1s' }}>
               <div className="flex items-center gap-2 mb-2">
                 <MapPin className="h-4 w-4" />
-                <span className="text-xs font-bold">ACCURACY</span>
+                <span className="text-xs font-bold">PROJECTS</span>
               </div>
-              <div className="text-lg font-bold">94%</div>
-              <div className="text-xs opacity-90">ML Model Performance</div>
+              <div className="text-sm font-bold">5+ Analytics</div>
+              <div className="text-xs opacity-90">ML & BI Solutions</div>
             </div>
             
             {/* Additional Floating Elements */}
