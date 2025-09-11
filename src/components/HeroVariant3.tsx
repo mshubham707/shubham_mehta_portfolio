@@ -59,38 +59,38 @@ const HeroVariant3 = () => {
             </div>
             
             {/* Enhanced Floating Achievement Cards */}
-            <div className="absolute -left-16 top-1/4 bg-gradient-to-r from-primary/95 to-primary/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg animate-float text-white max-w-[140px]" style={{ animationDelay: '0s' }}>
+            <div className="absolute -left-16 top-1/4 bg-gradient-to-r from-primary/95 to-primary/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg animate-float text-white max-w-[160px]" style={{ animationDelay: '0s' }}>
               <div className="flex items-center gap-2 mb-2">
                 <Calendar className="h-4 w-4" />
                 <span className="text-xs font-bold">EXPERIENCE</span>
               </div>
-              <div className="text-lg font-bold">3+ Years</div>
-              <div className="text-xs opacity-90">Aviation Analytics</div>
+              <div className="text-sm font-bold">3+ Years</div>
+              <div className="text-xs opacity-90">Aviation Analytics & Revenue Management</div>
             </div>
             
-            <div className="absolute -right-16 top-1/3 bg-gradient-to-r from-accent/95 to-accent/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg animate-float text-white max-w-[140px]" style={{ animationDelay: '1s' }}>
+            <div className="absolute -right-16 top-1/3 bg-gradient-to-r from-accent/95 to-accent/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg animate-float text-white max-w-[160px]" style={{ animationDelay: '1s' }}>
               <div className="flex items-center gap-2 mb-2">
                 <MapPin className="h-4 w-4" />
                 <span className="text-xs font-bold">PROJECTS</span>
               </div>
-              <div className="text-sm font-bold">5+ Analytics</div>
-              <div className="text-xs opacity-90">ML & BI Solutions</div>
+              <div className="text-sm font-bold">5+ End-to-End</div>
+              <div className="text-xs opacity-90">ML Models & BI Dashboards</div>
             </div>
             
-            {/* Additional Floating Elements */}
-            <div className="absolute -bottom-12 -left-12 bg-gradient-to-br from-primary/90 to-accent/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white" style={{ animationDelay: '2s' }}>
-              <div className="text-xs font-bold mb-1">PYTHON & SQL</div>
-              <div className="text-sm">Expert</div>
+            {/* Additional Floating Elements - Redesigned for Consistency */}
+            <div className="absolute -bottom-12 -left-12 bg-gradient-to-br from-primary/90 to-accent/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white max-w-[140px]" style={{ animationDelay: '2s' }}>
+              <div className="text-xs font-bold mb-1">TECHNICAL SKILLS</div>
+              <div className="text-sm">Python & SQL (Expert)</div>
             </div>
             
-            <div className="absolute -bottom-8 -right-14 bg-gradient-to-br from-accent/90 to-primary/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white" style={{ animationDelay: '2.5s' }}>
-              <div className="text-xs font-bold mb-1">POWER BI & TABLEAU</div>
-              <div className="text-sm">Advanced</div>
+            <div className="absolute -bottom-8 -right-14 bg-gradient-to-br from-accent/90 to-primary/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white max-w-[140px]" style={{ animationDelay: '2.5s' }}>
+              <div className="text-xs font-bold mb-1">VISUALIZATION</div>
+              <div className="text-sm">Power BI & Tableau (Advanced)</div>
             </div>
             
-            <div className="absolute -top-16 -right-8 bg-gradient-to-br from-primary/90 to-accent/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white" style={{ animationDelay: '3s' }}>
-              <div className="text-xs font-bold mb-1">MACHINE LEARNING</div>
-              <div className="text-sm">Enthusiast</div>
+            <div className="absolute -top-16 -right-8 bg-gradient-to-br from-primary/90 to-accent/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white max-w-[120px]" style={{ animationDelay: '3s' }}>
+              <div className="text-xs font-bold mb-1">RECOGNITION</div>
+              <div className="text-sm">Debutant of the Year</div>
             </div>
           </div>
         </div>
@@ -102,10 +102,10 @@ const HeroVariant3 = () => {
           </h1>
           <div className="max-w-3xl mx-auto">
             <p className="text-2xl md:text-3xl text-primary font-semibold mb-4">
-              Data Analytics Professional
+              Data Analytics & Machine Learning Professional
             </p>
             <p className="text-lg text-body leading-relaxed">
-              Transforming complex aviation datasets into strategic business insights with 3 years of industry expertise
+              Transforming complex datasets into actionable insights, with 3+ years of experience driving revenue growth and operational efficiency in the aviation industry.
             </p>
           </div>
         </div>
