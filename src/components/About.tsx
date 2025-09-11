@@ -46,29 +46,37 @@ const About = () => {
         </div>
 
         {/* Highlight Boxes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <Card className="p-6 shadow-elegant hover:shadow-lg transition-smooth text-center">
-            <div className="bg-primary-light p-3 rounded-lg w-fit mx-auto mb-4">
-              <GraduationCap className="h-6 w-6 text-primary" />
-            </div>
-            <h3 className="font-semibold text-heading mb-2">Academic Excellence</h3>
-            <p className="text-body text-sm">Economics Honors graduate with strong analytical foundation</p>
-          </Card>
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           <Card className="p-6 shadow-elegant hover:shadow-lg transition-smooth text-center">
             <div className="bg-primary-light p-3 rounded-lg w-fit mx-auto mb-4">
               <TrendingUp className="h-6 w-6 text-primary" />
             </div>
-            <h3 className="font-semibold text-heading mb-2">Revenue Growth</h3>
-            <p className="text-body text-sm">40% YoY RASK growth through strategic pricing analytics</p>
+            <h3 className="font-semibold text-heading mb-2">Business Impact</h3>
+            <p className="text-body text-sm">Delivered 15% YoY revenue growth in international markets through data-driven pricing strategies</p>
           </Card>
 
           <Card className="p-6 shadow-elegant hover:shadow-lg transition-smooth text-center">
             <div className="bg-primary-light p-3 rounded-lg w-fit mx-auto mb-4">
               <Target className="h-6 w-6 text-primary" />
             </div>
-            <h3 className="font-semibold text-heading mb-2">Innovation Focus</h3>
-            <p className="text-body text-sm">Applying technology to solve complex business problems</p>
+            <h3 className="font-semibold text-heading mb-2">Process Automation</h3>
+            <p className="text-body text-sm">Reduced manual work by 30% by building automated dashboards and flight management tools</p>
+          </Card>
+
+          <Card className="p-6 shadow-elegant hover:shadow-lg transition-smooth text-center">
+            <div className="bg-primary-light p-3 rounded-lg w-fit mx-auto mb-4">
+              <GraduationCap className="h-6 w-6 text-primary" />
+            </div>
+            <h3 className="font-semibold text-heading mb-2">Machine Learning Projects</h3>
+            <p className="text-body text-sm">Built and deployed multiple ML projects, including predictive modeling and end-to-end web applications</p>
+          </Card>
+
+          <Card className="p-6 shadow-elegant hover:shadow-lg transition-smooth text-center">
+            <div className="bg-primary-light p-3 rounded-lg w-fit mx-auto mb-4">
+              <Target className="h-6 w-6 text-primary" />
+            </div>
+            <h3 className="font-semibold text-heading mb-2">Recognition & Awards</h3>
+            <p className="text-body text-sm">Honored with Debutant of the Year and multiple Employee of the Month awards at IndiGo</p>
           </Card>
         </div>
       </div>
