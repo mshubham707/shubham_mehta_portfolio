@@ -19,20 +19,28 @@ const About = () => {
             <p className="text-lg text-body leading-relaxed">
               I'm <span className="font-semibold text-heading">Shubham Mehta</span>, 
               a results-driven data analytics professional with 3 years of experience in the aviation industry. 
-              As a Senior Revenue Analyst at IndiGo, I leverage data to drive strategic decisions, optimize revenue, 
+              As a Senior Revenue Analyst at IndiGo, I use data to drive strategic decisions, optimize revenue, 
               and solve complex business problems across key international markets.
             </p>
             
             <p className="text-lg text-body leading-relaxed">
-              My journey began with a B.A. (Hons) in Economics from Ramanujan College, Delhi University (CGPA: 8.784), 
-              where I switched from science due to inspiring teaching that sparked my passion for economics and analytical thinking. 
-              This foundation in economic modeling and statistical analysis gives me a unique lens for interpreting business data.
+              My journey began with a B.A. (Hons) in Economics from Ramanujan College, Delhi University (CGPA: 8.784). 
+              Originally from a science background, I was inspired by great teaching to pursue economics, which ignited my 
+              passion for analytical thinking and problem-solving. This academic grounding in economic modeling and statistical 
+              analysis gives me a unique perspective in interpreting business data.
             </p>
             
             <p className="text-lg text-body leading-relaxed">
-              Inspired by Einstein's insight that "compound interest is the eighth wonder of the world," I believe consistent, 
-              focused effort in data science creates exponential impact. Every dataset tells a story—I help businesses read between 
-              the lines and act on those insights. Data science is where my passions converge: mathematics, technology, and logical problem-solving.
+              I live by Einstein's belief that "compound interest is the eighth wonder of the world." For me, it's more than 
+              a financial principle—it's a life philosophy. I believe small, consistent efforts in learning and applying data 
+              science can compound into exponential impact. Every dataset tells a story, and my mission is to uncover those 
+              stories to help businesses make smarter, data-driven decisions.
+            </p>
+
+            <p className="text-lg text-body leading-relaxed">
+              Data science is where my passions meet: mathematics, technology, and logical problem-solving. Looking ahead, 
+              I aspire to deepen my expertise in predictive modeling and advanced machine learning to create impactful, 
+              scalable solutions.
             </p>
           </div>
         </div>
