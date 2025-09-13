@@ -43,8 +43,8 @@ const HeroVariant3 = () => {
               </div>
             </div>
             
-            {/* Main Image Container with Enhanced Styling */}
-            <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full p-6 bg-gradient-to-br from-primary/30 via-background/50 to-accent/20 backdrop-blur-sm border-2 border-primary/20 group-hover:border-accent/30 transition-all duration-700">
+            {/* Main Image Container with Enhanced Styling - Bigger Size */}
+            <div className="relative w-96 h-96 md:w-[28rem] md:h-[28rem] rounded-full p-6 bg-gradient-to-br from-primary/30 via-background/50 to-accent/20 backdrop-blur-sm border-2 border-primary/20 group-hover:border-accent/30 transition-all duration-700">
               <div className="relative w-full h-full rounded-full overflow-hidden">
                 <img
                   src={profileImageUrl}
@@ -57,9 +57,13 @@ const HeroVariant3 = () => {
               {/* Inner Glow Effect */}
               <div className="absolute inset-0 rounded-full shadow-[inset_0_0_50px_rgba(var(--primary-rgb),0.1)] group-hover:shadow-[inset_0_0_80px_rgba(var(--accent-rgb),0.2)] transition-all duration-500"></div>
             </div>
-            
-            {/* Enhanced Floating Achievement Cards */}
-            <div className="absolute -left-16 top-1/4 bg-gradient-to-r from-primary/95 to-primary/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg animate-float text-white max-w-[160px]" style={{ animationDelay: '0s' }}>
+          </div>
+        </div>
+
+        {/* Floating Highlights in Horizontal Row */}
+        <div className="mb-12 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
+            <div className="bg-gradient-to-r from-primary/95 to-primary/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg animate-float text-white max-w-[200px]" style={{ animationDelay: '0s' }}>
               <div className="flex items-center gap-2 mb-2">
                 <Calendar className="h-4 w-4" />
                 <span className="text-xs font-bold">EXPERIENCE</span>
@@ -68,7 +72,7 @@ const HeroVariant3 = () => {
               <div className="text-xs opacity-90">Aviation Analytics & Revenue Management</div>
             </div>
             
-            <div className="absolute -right-16 top-1/3 bg-gradient-to-r from-accent/95 to-accent/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg animate-float text-white max-w-[160px]" style={{ animationDelay: '1s' }}>
+            <div className="bg-gradient-to-r from-accent/95 to-accent/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg animate-float text-white max-w-[200px]" style={{ animationDelay: '0.3s' }}>
               <div className="flex items-center gap-2 mb-2">
                 <MapPin className="h-4 w-4" />
                 <span className="text-xs font-bold">PROJECTS</span>
@@ -77,18 +81,17 @@ const HeroVariant3 = () => {
               <div className="text-xs opacity-90">ML Models & BI Dashboards</div>
             </div>
             
-            {/* Additional Floating Elements - Redesigned for Consistency */}
-            <div className="absolute -bottom-12 -left-12 bg-gradient-to-br from-primary/90 to-accent/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white max-w-[140px]" style={{ animationDelay: '2s' }}>
+            <div className="bg-gradient-to-br from-primary/90 to-accent/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white max-w-[180px]" style={{ animationDelay: '0.6s' }}>
               <div className="text-xs font-bold mb-1">TECHNICAL SKILLS</div>
               <div className="text-sm">Python & SQL (Expert)</div>
             </div>
             
-            <div className="absolute -bottom-8 -right-14 bg-gradient-to-br from-accent/90 to-primary/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white max-w-[140px]" style={{ animationDelay: '2.5s' }}>
+            <div className="bg-gradient-to-br from-accent/90 to-primary/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white max-w-[180px]" style={{ animationDelay: '0.9s' }}>
               <div className="text-xs font-bold mb-1">VISUALIZATION</div>
               <div className="text-sm">Power BI & Tableau (Advanced)</div>
             </div>
             
-            <div className="absolute -top-16 -right-8 bg-gradient-to-br from-primary/90 to-accent/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white max-w-[120px]" style={{ animationDelay: '3s' }}>
+            <div className="bg-gradient-to-br from-primary/90 to-accent/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white max-w-[160px]" style={{ animationDelay: '1.2s' }}>
               <div className="text-xs font-bold mb-1">RECOGNITION</div>
               <div className="text-sm">Debutant of the Year</div>
             </div>
