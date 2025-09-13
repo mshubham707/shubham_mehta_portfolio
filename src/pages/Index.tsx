@@ -19,8 +19,8 @@ const Index = () => {
       {/* <Hero /> */}
       {/* <HeroVariant2 /> */}
       {/* <HeroVariant3 /> */}
-      {/* <HeroVariant4 /> */}
-      <HeroVariant5 />
+      <HeroVariant4 />
+      {/* <HeroVariant5 /> */}
       <About />
       <Experience />
       <Projects />
