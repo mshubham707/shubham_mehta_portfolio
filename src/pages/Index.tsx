@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import HeroVariant2 from "@/components/HeroVariant2";
 import HeroVariant3 from "@/components/HeroVariant3";
 import HeroVariant4 from "@/components/HeroVariant4";
+import HeroVariant5 from "@/components/HeroVariant5";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -18,7 +19,8 @@ const Index = () => {
       {/* <Hero /> */}
       {/* <HeroVariant2 /> */}
       {/* <HeroVariant3 /> */}
-      <HeroVariant4 />
+      {/* <HeroVariant4 /> */}
+      <HeroVariant5 />
       <About />
       <Experience />
       <Projects />
