@@ -155,13 +155,6 @@ const HeroVariant3 = () => {
           </Button>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-up" style={{ animationDelay: '1s' }}>
-          <div className="flex flex-col items-center text-light">
-            <span className="text-sm mb-2">Discover more</span>
-            <ArrowDown className="h-4 w-4 animate-bounce" />
-          </div>
-        </div>
       </div>
     </section>
   );
