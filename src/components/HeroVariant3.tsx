@@ -60,10 +60,10 @@ const HeroVariant3 = () => {
           </div>
         </div>
 
-        {/* Floating Highlights in Horizontal Row */}
+        {/* Highlights in Horizontal Row */}
         <div className="mb-12 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
-            <div className="bg-gradient-to-r from-primary/95 to-primary/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg animate-float text-white max-w-[200px]" style={{ animationDelay: '0s' }}>
+            <div className="bg-primary text-primary-foreground border-2 border-primary/20 rounded-2xl p-4 shadow-lg max-w-[200px]">
               <div className="flex items-center gap-2 mb-2">
                 <Calendar className="h-4 w-4" />
                 <span className="text-xs font-bold">EXPERIENCE</span>
@@ -72,7 +72,7 @@ const HeroVariant3 = () => {
               <div className="text-xs opacity-90">Aviation Analytics & Revenue Management</div>
             </div>
             
-            <div className="bg-gradient-to-r from-accent/95 to-accent/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg animate-float text-white max-w-[200px]" style={{ animationDelay: '0.3s' }}>
+            <div className="bg-accent text-accent-foreground border-2 border-accent/20 rounded-2xl p-4 shadow-lg max-w-[200px]">
               <div className="flex items-center gap-2 mb-2">
                 <MapPin className="h-4 w-4" />
                 <span className="text-xs font-bold">PROJECTS</span>
@@ -81,18 +81,18 @@ const HeroVariant3 = () => {
               <div className="text-xs opacity-90">ML Models & BI Dashboards</div>
             </div>
             
-            <div className="bg-gradient-to-br from-primary/90 to-accent/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white max-w-[180px]" style={{ animationDelay: '0.6s' }}>
-              <div className="text-xs font-bold mb-1">TECHNICAL SKILLS</div>
+            <div className="bg-card text-card-foreground border-2 border-primary/30 rounded-xl p-3 shadow-lg max-w-[180px]">
+              <div className="text-xs font-bold mb-1 text-primary">TECHNICAL SKILLS</div>
               <div className="text-sm">Python & SQL (Expert)</div>
             </div>
             
-            <div className="bg-gradient-to-br from-accent/90 to-primary/80 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white max-w-[180px]" style={{ animationDelay: '0.9s' }}>
-              <div className="text-xs font-bold mb-1">VISUALIZATION</div>
+            <div className="bg-card text-card-foreground border-2 border-accent/30 rounded-xl p-3 shadow-lg max-w-[180px]">
+              <div className="text-xs font-bold mb-1 text-accent">VISUALIZATION</div>
               <div className="text-sm">Power BI & Tableau (Advanced)</div>
             </div>
             
-            <div className="bg-gradient-to-br from-primary/90 to-accent/90 backdrop-blur-sm rounded-xl p-3 shadow-lg animate-float text-white max-w-[160px]" style={{ animationDelay: '1.2s' }}>
-              <div className="text-xs font-bold mb-1">RECOGNITION</div>
+            <div className="bg-muted text-muted-foreground border-2 border-primary/20 rounded-xl p-3 shadow-lg max-w-[160px]">
+              <div className="text-xs font-bold mb-1 text-primary">RECOGNITION</div>
               <div className="text-sm">Debutant of the Year</div>
             </div>
           </div>
