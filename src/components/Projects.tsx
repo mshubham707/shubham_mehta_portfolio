@@ -6,19 +6,20 @@ import { ExternalLink, Github, BarChart3, Recycle, Activity } from "lucide-react
 const Projects = () => {
   const projects = [
     {
-      title: "Airline Performance Dashboard",
-      description: "Comprehensive analytics dashboard for monitoring airline operational metrics, passenger satisfaction, and route performance. Features real-time data visualization and predictive analytics for demand forecasting.",
-      icon: BarChart3,
-      technologies: ["Flask", "Python", "Plotly", "Pandas", "SQL", "JavaScript"],
+      title: "Multiple Disease Prediction System",
+      description: "Machine learning-powered diagnostic tool that predicts multiple diseases based on symptoms and clinical parameters. Features advanced ensemble methods and real-time prediction capabilities through a Flask web interface.",
+      icon: Activity,
+      technologies: ["Python", "XGBoost", "Scikit-Learn", "Flask", "Pandas", "NumPy", "Joblib"],
       features: [
-        "Real-time KPI monitoring",
-        "Interactive route analysis",
-        "Passenger satisfaction metrics",
-        "Predictive demand modeling"
+        "Multi-disease classification",
+        "Symptom-based prediction",
+        "Real-time web interface",
+        "Statistical model validation",
+        "Feature importance analysis"
       ],
-      demoLink: "https://airline-kpi-dashboard.onrender.com/",
-      githubLink: "https://github.com/mshubham707/Airline-Dashboard-Flask",
-      status: "Live Demo"
+      githubLink: "https://github.com/mshubham707/disease_prediction",
+      demoLink: "https://huggingface.co/spaces/shubzz13/disease-prediction",
+      status: "Live Demo Available"
     },
     {
       title: "Waste Management Prediction",
@@ -35,20 +36,19 @@ const Projects = () => {
       status: "Open Source"
     },
     {
-      title: "Multiple Disease Prediction System",
-      description: "Machine learning-powered diagnostic tool that predicts multiple diseases based on symptoms and clinical parameters. Features advanced ensemble methods and real-time prediction capabilities through a Flask web interface.",
-      icon: Activity,
-      technologies: ["Python", "XGBoost", "Scikit-Learn", "Flask", "Pandas", "NumPy", "Joblib"],
+      title: "Airline Performance Dashboard",
+      description: "Comprehensive analytics dashboard for monitoring airline operational metrics, passenger satisfaction, and route performance. Features real-time data visualization and predictive analytics for demand forecasting.",
+      icon: BarChart3,
+      technologies: ["Flask", "Python", "Plotly", "Pandas", "SQL", "JavaScript"],
       features: [
-        "Multi-disease classification",
-        "Symptom-based prediction",
-        "Real-time web interface",
-        "Statistical model validation",
-        "Feature importance analysis"
+        "Real-time KPI monitoring",
+        "Interactive route analysis",
+        "Passenger satisfaction metrics",
+        "Predictive demand modeling"
       ],
-      githubLink: "https://github.com/mshubham707/disease_prediction",
-      demoLink: "https://huggingface.co/spaces/shubzz13/disease-prediction",
-      status: "Live Demo Available"
+      demoLink: "https://airline-kpi-dashboard.onrender.com/",
+      githubLink: "https://github.com/mshubham707/Airline-Dashboard-Flask",
+      status: "Live Demo"
     }
   ];
 
