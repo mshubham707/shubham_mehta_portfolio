@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Mail, MapPin, Calendar } from "lucide-react";
+import { ArrowDown, Mail, MapPin, Calendar, Download } from "lucide-react";
 const profileImageUrl = "/lovable-uploads/a0650eff-04ef-4180-826d-f95213da3d31.png";
 
 // VARIANT 3: Central Focus - Huge Circular Image
@@ -7,6 +7,15 @@ const HeroVariant3 = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // Place your resume.pdf in the public folder
+    link.download = 'Shubham_Mehta_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -123,6 +132,16 @@ const HeroVariant3 = () => {
           >
             <span>Explore My Work</span>
             <ArrowDown className="ml-3 h-5 w-5 group-hover:translate-y-1 transition-transform" />
+          </Button>
+          
+          <Button 
+            variant="minimal" 
+            size="xl"
+            onClick={downloadResume}
+            className="px-8 py-4"
+          >
+            <Download className="mr-3 h-5 w-5" />
+            Download Resume
           </Button>
           
           <Button 
