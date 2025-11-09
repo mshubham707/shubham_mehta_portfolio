@@ -20,9 +20,10 @@ const Education = () => {
       status: "Completed"
     },
     {
-      degree: "Professional Certificate in Data Science",
+      degree: "Data Analytics Course",
       institution: "PW Skills (Physics Wallah)",
-      duration: "October 2024 - August 2025 (Expected)",
+      institutionLink: "https://pwskills.com/learn/certificate/b78bb781-80b1-45d7-8914-2de34ad44916/?isCareerPath=true",
+      duration: "Completed on Oct 2025",
       subjects: ["Python Programming", "SQL Database Management", "Machine Learning", "Data Analytics"],
       highlights: [
         "Comprehensive hands-on training in Python for Data Science",
@@ -31,7 +32,7 @@ const Education = () => {
         "Real-world project-based learning approach"
       ],
       icon: BookOpen,
-      status: "In Progress"
+      status: "Completed"
     }
   ];
 
@@ -64,7 +65,18 @@ const Education = () => {
                         <CardTitle className="text-xl font-montserrat text-heading">
                           {education.degree}
                         </CardTitle>
-                        <p className="text-primary font-semibold">{education.institution}</p>
+                        {education.institutionLink ? (
+                          <a 
+                            href={education.institutionLink} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-primary font-semibold hover:underline"
+                          >
+                            {education.institution}
+                          </a>
+                        ) : (
+                          <p className="text-primary font-semibold">{education.institution}</p>
+                        )}
                       </div>
                     </div>
                   </div>
