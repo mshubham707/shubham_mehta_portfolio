@@ -7,6 +7,7 @@ const Education = () => {
     {
       degree: "Bachelor of Arts (Honors) in Economics",
       institution: "Ramanujan College, Delhi University",
+      institutionLink: "https://ramanujancollege.ac.in/",
       duration: "2019 - 2022",
       cgpa: "8.784",
       maxCgpa: "10.0",
