@@ -64,14 +64,6 @@ All colors MUST be HSL.
     --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     --transition-spring: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    /* Neumorphic Design Tokens */
-    --neumorph-bg: 240 5% 96%;
-    --neumorph-shadow-light: rgba(255, 255, 255, 0.7);
-    --neumorph-shadow-dark: rgba(174, 174, 192, 0.4);
-    --neumorph-shadow-inset-light: rgba(174, 174, 192, 0.2);
-    --neumorph-shadow-inset-dark: rgba(255, 255, 255, 0.1);
-    --neumorph-accent: 250 69% 61%;
-
     --sidebar-background: 225 15% 98%;
     --sidebar-foreground: 225 20% 20%;
     --sidebar-primary: 225 25% 10%;
@@ -155,13 +147,6 @@ All colors MUST be HSL.
     --shadow-md: 0 4px 6px hsl(0 0% 0% / 0.4), 0 2px 4px hsl(0 0% 0% / 0.3);
     --shadow-lg: 0 10px 15px hsl(0 0% 0% / 0.5), 0 4px 6px hsl(0 0% 0% / 0.4);
     --shadow-elegant: 0 8px 30px hsl(212 100% 20% / 0.25), 0 2px 6px hsl(212 100% 20% / 0.15);
-
-    /* Neumorphic Dark Mode */
-    --neumorph-bg: 0 0% 10%;
-    --neumorph-shadow-light: rgba(50, 50, 50, 0.5);
-    --neumorph-shadow-dark: rgba(0, 0, 0, 0.5);
-    --neumorph-shadow-inset-light: rgba(0, 0, 0, 0.3);
-    --neumorph-shadow-inset-dark: rgba(50, 50, 50, 0.1);
 
     /* Dark Mode Color Scheme Variants */
     
@@ -309,41 +294,5 @@ All colors MUST be HSL.
     --secondary: var(--forest-secondary-dark);
     --accent: var(--forest-accent-dark);
     --gradient-primary: var(--forest-gradient-dark);
-  }
-
-  /* Neumorphic Utilities */
-  .neumorph-card {
-    background: hsl(var(--neumorph-bg));
-    box-shadow: 
-      8px 8px 16px var(--neumorph-shadow-dark),
-      -8px -8px 16px var(--neumorph-shadow-light);
-    border-radius: 20px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .neumorph-card:hover {
-    box-shadow: 
-      4px 4px 8px var(--neumorph-shadow-dark),
-      -4px -4px 8px var(--neumorph-shadow-light);
-  }
-
-  .neumorph-card-pressed {
-    box-shadow: 
-      inset 4px 4px 8px var(--neumorph-shadow-inset-light),
-      inset -4px -4px 8px var(--neumorph-shadow-inset-dark);
-  }
-
-  .neumorph-button {
-    background: hsl(var(--neumorph-bg));
-    box-shadow: 
-      4px 4px 8px var(--neumorph-shadow-dark),
-      -4px -4px 8px var(--neumorph-shadow-light);
-    transition: all 0.2s ease;
-  }
-
-  .neumorph-button:active {
-    box-shadow: 
-      inset 2px 2px 4px var(--neumorph-shadow-inset-light),
-      inset -2px -2px 4px var(--neumorph-shadow-inset-dark);
   }
 }
