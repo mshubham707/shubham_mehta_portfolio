@@ -14,26 +14,32 @@ const ExperienceNeumorph = () => {
       icon: TrendingUp,
       title: "Revenue Growth & Pricing Strategy",
       metric: "15% YoY Growth",
-      text: "Designed and executed pricing strategies across key international markets (Dubai, Thailand). Delivered 15% year-over-year revenue growth despite rising competition."
+      text: "Designed and executed pricing strategies across key international markets (Dubai, Thailand). Delivered 15% year-over-year revenue growth despite rising competition and increased industry capacity through optimal fare structures and market analysis."
     },
     {
       icon: Zap,
       title: "Process Optimization & Automation",
       metric: "30% Time Saved",
-      text: "Built flight management worksheets and dashboards that reduced manual work by 30%, saving countless analyst hours."
+      text: "Built flight management worksheets and dashboards that reduced manual work by 30%, saving countless analyst hours. Automated repetitive processes and standardized reporting for faster decision-making."
     },
     {
       icon: BarChart3,
       title: "Network & Route Analysis",
-      metric: "5+ New Routes",
-      text: "Conducted deep analysis of route performance, identifying opportunities to adjust schedules and launch new profitable routes."
+      metric: "50+ Routes Optimized",
+      text: "Conducted deep analysis of route performance, identifying opportunities to adjust schedules and launch new profitable routes. Optimized timing to strengthen international connections and capture higher-value passenger segments."
     },
     {
       icon: Trophy,
       title: "Cross-Functional Collaboration",
       metric: "System Deployment",
-      text: "Partnered with multiple departments to support deployment of new Revenue Management system (Kambr/SRM Flex)."
+      text: "Partnered with multiple departments to support deployment of new Revenue Management system (Kambr/SRM Flex). Ensured alignment with IndiGo's business needs while optimizing existing processes for evolving market demands."
     }
+  ];
+
+  const recognitions = [
+    "🏆 Debutant of the Year (2022–23) - Outstanding impact in first year",
+    "🌟 Multiple Employee of the Month awards",
+    "🤝 Cross-departmental recognition for professionalism and work excellence"
   ];
 
   return (
