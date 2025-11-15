@@ -4,28 +4,28 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsNeumorph = () => {
   const projects = [
     {
-      title: "Revenue Management Dashboard",
-      description: "Built comprehensive dashboard for tracking pricing strategies and route performance across 50+ international routes",
-      technologies: ["Python", "Tableau", "SQL", "AWS"],
-      impact: "15% YoY revenue growth",
-      link: "#",
-      github: "#"
+      title: "Multiple Disease Prediction System",
+      description: "Machine learning-powered diagnostic tool that predicts multiple diseases based on symptoms and clinical parameters. Features advanced ensemble methods and real-time prediction capabilities through a Flask web interface.",
+      technologies: ["Python", "XGBoost", "Scikit-Learn", "Flask", "Pandas", "NumPy", "Joblib"],
+      impact: "Live Demo Available",
+      link: "https://huggingface.co/spaces/shubzz13/disease-prediction",
+      github: "https://github.com/mshubham707/disease_prediction"
     },
     {
-      title: "Flight Schedule Optimizer",
-      description: "ML-powered tool for optimizing flight schedules and identifying profitable route opportunities",
-      technologies: ["Python", "Scikit-learn", "Flask"],
-      impact: "30% reduction in manual work",
-      link: "#",
-      github: "#"
+      title: "Waste Management Prediction",
+      description: "Machine learning model for predicting waste generation patterns and optimizing collection routes. Implements XGBoost algorithm to forecast waste volumes and reduce operational costs.",
+      technologies: ["Python", "XGBoost", "Scikit-Learn", "Pandas", "Matplotlib", "Jupyter"],
+      impact: "Open Source",
+      link: "https://github.com/mshubham707/Waste-Management-Prediction",
+      github: "https://github.com/mshubham707/Waste-Management-Prediction"
     },
     {
-      title: "Demand Forecasting Model",
-      description: "Time series forecasting model for predicting passenger demand across different markets",
-      technologies: ["Python", "TensorFlow", "Pandas"],
-      impact: "92% accuracy",
-      link: "#",
-      github: "#"
+      title: "Airline Performance Dashboard",
+      description: "Comprehensive analytics dashboard for monitoring airline operational metrics, passenger satisfaction, and route performance. Features real-time data visualization and predictive analytics for demand forecasting.",
+      technologies: ["Flask", "Python", "Plotly", "Pandas", "SQL", "JavaScript"],
+      impact: "Live Demo",
+      link: "https://airline-kpi-dashboard.onrender.com/",
+      github: "https://github.com/mshubham707/Airline-Dashboard-Flask"
     }
   ];
 

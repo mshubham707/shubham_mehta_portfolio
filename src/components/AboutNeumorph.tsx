@@ -38,17 +38,30 @@ const AboutNeumorph = () => {
         {/* Main Content */}
         <div className="neumorph-card p-8 mb-8">
           <p className="text-body text-lg leading-relaxed mb-6">
-            I'm a <span className="font-semibold" style={{ color: 'hsl(var(--neumorph-accent))' }}>Senior Analyst</span> at IndiGo Airlines with over 3 years of experience in Planning & Revenue Management. 
-            My expertise lies in leveraging data analytics and machine learning to drive strategic business decisions.
+            I'm <span className="font-semibold text-heading">Shubham Mehta</span>, 
+            a results-driven data analytics professional with 3 years of experience in the aviation industry. 
+            As a Senior Revenue Analyst at IndiGo, I use data to drive strategic decisions, optimize revenue, 
+            and solve complex business problems across key international markets.
           </p>
+          
           <p className="text-body text-lg leading-relaxed mb-6">
-            At IndiGo, I've successfully delivered <span className="font-semibold" style={{ color: 'hsl(var(--neumorph-accent))' }}>15% year-over-year revenue growth</span> through 
-            innovative pricing strategies and data-driven optimization. I specialize in building automated solutions 
-            that save time and improve efficiency across teams.
+            My journey began with a B.A. (Hons) in Economics from Ramanujan College, Delhi University (CGPA: 8.784). 
+            Originally from a science background, I was inspired by great teaching to pursue economics, which ignited my 
+            passion for analytical thinking and problem-solving. This academic grounding in economic modeling and statistical 
+            analysis gives me a unique perspective in interpreting business data.
           </p>
+          
+          <p className="text-body text-lg leading-relaxed mb-6">
+            I live by Einstein's belief that "compound interest is the eighth wonder of the world." For me, it's more than 
+            a financial principle—it's a life philosophy. I believe small, consistent efforts in learning and applying data 
+            science can compound into exponential impact. Every dataset tells a story, and my mission is to uncover those 
+            stories to help businesses make smarter, data-driven decisions.
+          </p>
+
           <p className="text-body text-lg leading-relaxed">
-            My passion for technology and business analytics drives me to continuously learn and implement 
-            cutting-edge solutions that create measurable impact.
+            Data science is where my passions meet: mathematics, technology, and logical problem-solving. Looking ahead, 
+            I aspire to deepen my expertise in predictive modeling and advanced machine learning to create impactful, 
+            scalable solutions.
           </p>
         </div>
 

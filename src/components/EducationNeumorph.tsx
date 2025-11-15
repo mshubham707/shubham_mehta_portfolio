@@ -3,20 +3,27 @@ import { GraduationCap, Award } from "lucide-react";
 const EducationNeumorph = () => {
   const education = [
     {
-      degree: "Bachelor of Science (Hons.) Statistics",
-      institution: "Ramanujan College, University of Delhi",
+      degree: "Bachelor of Arts (Honors) in Economics",
+      institution: "Ramanujan College, Delhi University",
       institutionLink: "https://ramanujancollege.ac.in/",
-      period: "2018 - 2021",
-      grade: "7.51 CGPA"
+      period: "2019 - 2022",
+      grade: "8.784 CGPA",
+      highlights: [
+        "Specialized in Econometrics and Statistical Analysis",
+        "Research focus on Market Dynamics and Pricing Theory",
+        "Strong foundation in Mathematical Economics",
+        "Academic excellence with consistent performance"
+      ]
     }
   ];
 
   const certifications = [
     {
       name: "Data Analytics Course",
-      institution: "PW Skills",
+      institution: "PW Skills (Physics Wallah)",
       institutionLink: "https://pwskills.com/learn/certificate/b78bb781-80b1-45d7-8914-2de34ad44916/?isCareerPath=true",
-      date: "Completed on Oct 2025"
+      date: "Completed on Oct 2025",
+      subjects: ["Python Programming", "SQL Database Management", "Machine Learning", "Data Analytics"]
     }
   ];
 
@@ -53,11 +60,19 @@ const EducationNeumorph = () => {
                   {edu.institution}
                 </a>
               </p>
-              <div className="flex flex-wrap gap-4 text-body text-sm">
+              <div className="flex flex-wrap gap-4 text-body text-sm mb-4">
                 <span>{edu.period}</span>
                 <span>•</span>
                 <span className="font-semibold">{edu.grade}</span>
               </div>
+              <ul className="space-y-2 mt-4">
+                {edu.highlights.map((highlight, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full mt-2" style={{ background: 'hsl(var(--neumorph-accent))' }}></div>
+                    <span className="text-body text-sm">{highlight}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -85,7 +100,20 @@ const EducationNeumorph = () => {
                     {cert.institution}
                   </a>
                 </p>
-                <p className="text-body text-sm">{cert.date}</p>
+                <p className="text-body text-sm mb-3">{cert.date}</p>
+                {cert.subjects && (
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    {cert.subjects.map((subject, idx) => (
+                      <span 
+                        key={idx} 
+                        className="text-xs px-3 py-1 rounded-full neumorph-card-pressed"
+                        style={{ color: 'hsl(var(--neumorph-accent))' }}
+                      >
+                        {subject}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
